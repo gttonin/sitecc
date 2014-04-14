@@ -8,6 +8,8 @@ add_action("admin_enqueue_scripts","eventos_carrega_script");
 function inicializa_plugin_eventos() {
     $args = array(
 		'public' => true,
+		"menu_icon" => "dashicons-calendar",
+		"menu_position" => 5,
 		'labels'  => array(
 
       		'name'               =>  'Eventos',
@@ -145,8 +147,13 @@ HTML;
 
 }
 
+/**
+ * Coloca scripts e estilos para serem carregados pelo Wordpress, como
+ * uma fila.
+ */
 function eventos_carrega_script() {
-	
-	wp_enqueue_script( "maskedinput",plugins_url( "/js/jquery.maskedinput.min.js", __FILE__ ));
+	wp_enqueue_style( "eventos_css",plugins_url( "/css/eventos.css", __FILE__ ));
+	wp_enqueue_style( "datetimepickerCSS",plugins_url( "/css/jquery.datetimepicker.css", __FILE__ ));
+	wp_enqueue_script( "datetimepicker",plugins_url( "/js/jquery.datetimepicker.js", __FILE__ ));
 	wp_enqueue_script( "eventos_scripts",plugins_url( "/js/scripts.js", __FILE__ ));
 }
