@@ -1,0 +1,6 @@
+*
+!.gitignore
+!plugins
+
+plugins/*
+!plugins/eventos
