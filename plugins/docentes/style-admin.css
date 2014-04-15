@@ -1,0 +1,7 @@
+.widefat {width: 80%;height:auto;}
+table,tr,td,th{background:#ccc;border:1px solid;}
+#docentes{width:80%;}
+#docentes input[type=text]{width:100%;}
+#docentes input[type=email]{width:100%;}
+#docentes textarea{width:100%;}
+#docentes input[type=submit]{float:right;}	
