@@ -43,7 +43,15 @@ function add_docentes() {
 	    //Verificaremos se existe uma certa tabela no banco de dados.
 	    if($wpdb->get_var("SHOW TABLE LIKE {$wpdb->prefix}docentes") != "{$wpdb->prefix}docentes"){
 	        //Se não existir a tabela, então a criaremos
-	        $wpdb->query("CREATE TABLE {$wpdb->prefix}docentes(id_docente int not null primary key auto_increment, nome varchar(100),cargo varchar(100),email varchar(100),lattes varchar(100),historico text,especialidade varchar(100),foto varchar(100))");
+	        $wpdb->query("CREATE TABLE {$wpdb->prefix}docentes(
+				id_docente int not null primary key auto_increment, 
+				nome varchar(100),
+				cargo varchar(100),
+				email varchar(100),
+				lattes varchar(100),
+				historico text,
+				especialidade varchar(100),
+				foto varchar(100))");
 	    }
 }
 define('ROOTDIR', plugin_dir_path(__FILE__));
