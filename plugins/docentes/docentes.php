@@ -2,12 +2,13 @@
 
 /**
  * Plugin Name: Docentes
- */
+*/
 
 function mostra_html_docentes($post)
 {
 	$cargo = get_post_meta( $post->ID, "docentes_cargo", true );
 	$email = get_post_meta( $post->ID, "docentes_email", true );
+	$website = get_post_meta( $post->ID, "docentes_website", true );
 	$lattes = get_post_meta( $post->ID, "docentes_lattes", true );
 	$especialidade = get_post_meta( $post->ID, "docentes_especialidade", true );
 
@@ -28,9 +29,15 @@ function mostra_html_docentes($post)
 			</td>
 		</tr>
 		<tr>
+			<td>Website:</td>
+			<td>
+				<input type="url" class="large-text" name="docentes_website" placeholder="Digite o website do docente" value="{$website}" />
+			</td>
+		</tr>
+		<tr>
 			<td>Lattes:</td>
 			<td>
-				<input type="text" class="large-text" name="docentes_lattes" placeholder="Digite o lattes do docente" value="{$lattes}" />
+				<input type="url" class="large-text" name="docentes_lattes" placeholder="Digite o lattes do docente" value="{$lattes}" />
 			</td>
 		</tr>
 		<tr>
@@ -69,6 +76,7 @@ function docentes_salva_dados($post_id)
 	$dadosPossiveis = array(
 		"docentes_cargo",
 		"docentes_email",
+		"docentes_website",
 		"docentes_lattes",
 		"docentes_especialidade"
 	);
