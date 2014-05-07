@@ -7,3 +7,4 @@ plugins/*
 !plugins/eventos/*
 !plugins/docentes/*
 !plugins/noticias/*
+!plugins/empregos/*
