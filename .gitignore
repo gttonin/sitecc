@@ -8,3 +8,4 @@ plugins/*
 !plugins/docentes/*
 !plugins/noticias/*
 !plugins/empregos/*
+!plugins/formandos/*
