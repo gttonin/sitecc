@@ -14,9 +14,6 @@
  * @package WordPress
  */ 
 
-var_dump($_SERVER);
-var_dump($OPENSHIFT_MYSQL_DB_HOST, $OPENSHIFT_MYSQL_DB_PORT);
-
 $ambientes = array (
   'desenvolvimento' => array (
     'host'     => 'http://sitecc.dev', 
@@ -27,7 +24,7 @@ $ambientes = array (
   ),
   'producao' => array (
     'host'     => 'http://staging-esuffs.rhcloud.com', 
-    'dbhost'   => "$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT",
+    'dbhost'   => "$_SERVER['OPENSHIFT_MYSQL_DB_HOST']:$_SERVER['OPENSHIFT_MYSQL_DB_PORT']",
     'database' => 'staging',
     'user'     => 'admingzeGqH5',
     'pass'     => 'ClzU1F-9419B'
@@ -37,7 +34,7 @@ $ambientes = array (
 $ambiente = $ambientes['desenvolvimento'];
 $env = "desenvolvimento";
 
-if (isset($OPENSHIFT_MYSQL_DB_PORT)){
+if (isset($_SERVER['OPENSHIFT_MYSQL_DB_PORT'])){
   $ambiente = $ambientes['producao'];
   $env = "producao";
 }
