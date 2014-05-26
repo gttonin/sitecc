@@ -24,10 +24,10 @@ $ambientes = array (
   ),
   'producao' => array (
     'host'     => 'http://staging-esuffs.rhcloud.com', 
-    'dbhost'   => $_SERVER['OPENSHIFT_MYSQL_DB_HOST'] . ":" . $_SERVER['OPENSHIFT_MYSQL_DB_PORT'],
+    'dbhost'   => (isset($_SERVER['OPENSHIFT_MYSQL_DB_HOST']) ? $_SERVER['OPENSHIFT_MYSQL_DB_HOST'] : "") . ":" . (isset($_SERVER['OPENSHIFT_MYSQL_DB_PORT']) ? $_SERVER['OPENSHIFT_MYSQL_DB_PORT'] : ""),
     'database' => 'staging',
-    'user'     => 'admingzeGqH5',
-    'pass'     => 'ClzU1F-9419B'
+    'user'     => (isset($_SERVER['OPENSHIFT_MYSQL_DB_USERNAME']) ? $_SERVER['OPENSHIFT_MYSQL_DB_USERNAME'] : ""),
+    'pass'     => (isset($_SERVER['OPENSHIFT_MYSQL_DB_PASSWORD']) ? $_SERVER['OPENSHIFT_MYSQL_DB_PASSWORD'] : "")
   )
 );
 
