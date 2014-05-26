@@ -1,0 +1,88 @@
+/*Itens padrão*/
+	home h1 {}
+
+	home h2 {}
+
+	home a {}
+
+	home * {
+		color:;
+		font-family: ;
+	}
+
+/*Especificos*/
+
+ /**
+  * ----------------Menu-------------------
+  */
+ 	home menu {}
+	
+	home menu .logo-universidade {}
+ 	
+ 	home menu .menu-botoes {}
+ 	
+ 	home menu .menu-botoes menuitem {}
+ 	
+ 	home menu .menu-botoes .submenu {}
+ 	
+ 	home menu .menu-botoes ul.submenu-hover {}
+ 	
+ 	home menu .menu-botoes .submenu ul li {}
+
+ /**
+  * ----------------Slider-------------------
+  */
+	home slider {}
+	
+	home slider .slider {}
+ 
+ /**
+  * ----------------Corpo-------------------
+  */
+    home corpo {}
+ 	
+ 	home corpo .busca {}
+ 	
+ 	home corpo .busca input {}
+ 	
+ 	home corpo .exibicao1 {
+ 		display: block;
+ 		width: 100%;
+ 	}
+ 	
+ 	home corpo .exibicao1 .links-uteis {
+ 		width: 33%;
+ 	}
+	
+	home corpo .exibicao1 .noticias {
+		width: 66%;
+	}
+
+	home corpo .exibicao2 {
+		display: block;
+ 		width: 100%;
+	}
+	
+	home corpo .exibicao2 .eventos {}
+	
+	home corpo .exibicao2 .blog {}
+	
+	home corpo .exibicao2 .oportunidades {}
+
+
+
+ /**
+  * ----------------Rodape-------------------
+  */
+ 	home rodape {}
+
+	home rodape #button-topo {}
+
+	home rodape .logos {}
+
+	home rodape .newsletter {}
+
+	home rodape .redes-sociais {}
+	
+
+
