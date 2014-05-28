@@ -1,0 +1,44 @@
+-----------------------HTML-----------------------------------------
+
+Padronização HTML
+
+Alguns recursos utilizados para a padronização seguem o principio do html5.
+
+O doctype utilizado em todas as páginas deve ser o do html5 :
+<!DOCTYPE html>
+
+Todo o Html contido na pagina deve estar entre uma tag que corresponde ao nome do html.
+Ex: home.html
+
+<body>
+ <div class = "home">
+	Seu html aqui.
+ </div>
+<body>
+
+Dividir a página em hierarquias.
+Ex:
+<div class = "home">
+	<div class = "menu">
+		<div class = "submenu">
+			 ...
+	 	</div>
+	 </div>
+	 <div class = "corpo"> 
+	 	...
+	 </div>
+	 <div class = "rodape"> 
+	 	...
+	 </div>	
+</div>
+
+Nos nomes de qualquer elemento (classe,id) utilizar um nome que represente o mesmo. 
+
+-------------------------CSS---------------------------------------------------
+
+Sempre quando for definir algum item seguir a hierarquia do mesmo descrita no html.
+Ex:
+
+.home .corpo .exibicao1 .links-uteis { /*Sua definição*/}
+
+Utilizaremos recursos do Bootstrap.
