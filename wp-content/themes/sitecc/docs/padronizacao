@@ -42,3 +42,12 @@ Ex:
 .home .corpo .exibicao1 .links-uteis { /*Sua definição*/}
 
 Utilizaremos recursos do Bootstrap.
+
+* Como utilizar (inserindo no arquivo .html ou .php):
+
+<head>
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+Obs: Sempre que posível fazer download da fonte.
