@@ -1,14 +1,16 @@
 <?php
 
-require_once('wp-load.php' ); //not sure if this line is needed
+$baseDir = $_SERVER['OPENSHIFT_REPO_DIR'];
 
-require_once(  'wp-admin/includes/plugin.php');
-require_once(  'wp-admin/includes/theme.php');
+require_once( $baseDir . 'wp-load.php' ); //not sure if this line is needed
+
+require_once( $baseDir . 'wp-admin/includes/plugin.php');
+require_once( $baseDir . 'wp-admin/includes/theme.php');
 
 $plugins = array("eventos","docentes","noticias","empregos","formandos","blog","cp");
 
 foreach ($plugins as $plugin){
-  $plugin_path = 'wp-content/plugins/{$plugin}/{$plugin}.php';
+  $plugin_path = $baseDir . "wp-content/plugins/{$plugin}/{$plugin}.php";
   activate_plugin($plugin_path);
 }
 

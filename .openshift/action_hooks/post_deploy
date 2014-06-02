@@ -4,4 +4,4 @@ cp "${OPENSHIFT_REPO_DIR}wp-config-sample.php" "${OPENSHIFT_REPO_DIR}wp-config.p
 
 ln -s "${OPENSHIFT_DATA_DIR}uploads/" "${OPENSHIFT_REPO_DIR}wp-content/uploads"
 
-php "${OPENSHIFT_REPO_DIR}ativaplugin.php"
+php "${OPENSHIFT_REPO_DIR}ativaplugin.php" > dperrors.log
