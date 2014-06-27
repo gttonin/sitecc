@@ -1,0 +1,18 @@
+<?php require_once('header.php') ?>
+
+<div class="conteudo-pagina no-banner">
+
+	<h3 class="titulo-pagina">Imobiliária</h3>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur quis nulla eu tincidunt. Duis tristique nisl id odio interdum molestie. Etiam tristique orci nec lectus facilisis, in sodales tortor mollis. Mauris eu felis eget dolor imperdiet venenatis ut eu erat. Sed eu auctor mi. Nunc fermentum id turpis in venenatis. Quisque quis pretium diam, vel convallis sapien. Quisque placerat felis a enim ultricies tempor. Proin semper ante ac ante rutrum, nec viverra magna varius. Aliquam ut tortor non ligula porta mollis. Pellentesque ac risus suscipit elit mollis mattis sit amet eu elit. Nullam rhoncus fermentum libero eu sagittis. Fusce accumsan at ante quis facilisis. Vestibulum scelerisque aliquam ante at rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rhoncus non urna non suscipit.</p>
+
+	<p>Aenean porttitor, tellus eget sodales auctor, est tortor dictum lectus, at lacinia neque est eu dolor. Ut blandit nisi vel nunc rhoncus, nec faucibus ante suscipit. Mauris accumsan viverra ipsum, in posuere purus tincidunt non. Curabitur nec felis quis sem suscipit tincidunt. Fusce malesuada orci a orci dignissim, varius dictum ante bibendum. Duis massa velit, rhoncus in risus id, venenatis porta magna. Praesent augue leo, ultricies quis massa vitae, porttitor tristique augue. Quisque suscipit semper tincidunt. Quisque sed fringilla dui, quis dapibus ipsum. Fusce porttitor ante sed enim varius condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, rutrum at massa a, facilisis tincidunt turpis. Ut lectus diam, mollis eu erat at, adipiscing molestie eros. Pellentesque lobortis mattis pulvinar.</p>
+
+	<p>Cras a nulla vehicula, fermentum odio eu, porta libero. Etiam non sollicitudin mauris. Nunc auctor consequat tellus. Sed pellentesque at neque et luctus. Aliquam semper dignissim lectus sit amet dignissim. Quisque gravida interdum felis. Nulla in fringilla ligula, non tempus leo. Cras massa dolor, volutpat sit amet enim et, ultricies rutrum dolor. Quisque fermentum ultricies dui vel pretium.</p>
+
+	<p>Nulla sapien magna, rutrum vitae lectus vitae, luctus adipiscing ligula. Quisque iaculis mollis quam, nec vehicula mi condimentum nec. Morbi a nibh tortor. Nunc semper metus in ligula consequat, quis dapibus felis euismod. Praesent vel felis sed neque aliquet suscipit. Aenean sit amet leo in quam rhoncus iaculis vitae a ipsum. Nam tincidunt odio eget hendrerit bibendum. Mauris in dignissim dui, ut gravida velit. Nullam sed adipiscing mi. Morbi hendrerit nunc adipiscing leo feugiat facilisis. Integer eu libero et lacus scelerisque pharetra. Ut hendrerit laoreet urna ac bibendum.</p>
+
+	<p>Vivamus et ullamcorper mauris, nec rhoncus tellus. Aenean quis molestie urna. Integer magna lorem, euismod tristique mauris sed, venenatis varius tortor. Sed condimentum vestibulum elementum. In quis mollis lectus, sed fringilla felis. Duis enim ante, scelerisque vulputate leo eget, mattis iaculis felis. Fusce iaculis purus eget nunc malesuada, in interdum nunc gravida. Fusce nec odio sodales, fermentum risus non, placerat lorem. Fusce eu facilisis elit. Duis vehicula adipiscing velit, nec varius massa iaculis quis. Fusce lacinia lorem vitae venenatis blandit. Aenean fermentum ut purus id blandit.</p>
+</div>
+
+<?php require_once('footer.php') ?>

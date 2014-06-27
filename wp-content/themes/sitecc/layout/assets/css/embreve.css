@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Nobile';
+    src: url('../fonts/nobile.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Custom CSS Em Breve */
+
+body {
+    background: url('../img/embreve/efeitofundo.png') top right no-repeat, #081d39 url('../img/embreve/bg-pattern.png') repeat;
+    font-family: 'Nobile';
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo {
+    background: white url('../img/embreve/bg-papel.png') center no-repeat;
+    position: absolute;
+    top: 22.5%;
+    height: 55%;
+    width: 100%;
+    background-size: 100%;
+}
+
+.aguarde-txt {
+    color: #113c77;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+    font-size: 230%;
+}
+
+.fone {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    color: #0059a6;
+    font-size: 200%;
+}
+
+.indicadores {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    max-width: 450px;
+}
+
+.logo {
+    position: absolute;
+    left: 14%;
+    bottom: 40%;
+    width: 400px;
+}
+
+
+
+/*Fim Custom CSS */
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+    .aguarde-txt {
+        color: #113c77;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 10%;
+        font-size: 160%;
+    }
+
+    .fone {
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+        color: #0059a6;
+        font-size: 200%;
+    }
+
+    .indicadores {
+        position: absolute;
+        right: 10%;
+        bottom: 20%;
+        max-width: 400px;
+    }
+
+    .logo {
+        max-width: 200px;
+        position: absolute;
+        left: 14%;
+        bottom: 40%;
+    }
+
+
+    
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .aguarde-txt {
+        color: #113c77;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 10%;
+        font-size: 160%;
+    }
+
+    .fone {
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+        color: #0059a6;
+        font-size: 200%;
+    }
+
+    .indicadores {
+        position: absolute;
+        right: 10%;
+        bottom: 20%;
+        max-width: 400px;
+    }
+
+    .logo {
+        max-width: 200px;
+        position: absolute;
+        left: 14%;
+        bottom: 40%;
+    }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+    .conteudo {
+        background-size: 100% 100%;
+    }
+
+    .aguarde-txt {
+        font-size: 100%;
+    }
+
+    .indicadores {
+        max-width: 150px;
+    }
+
+    .fone {
+        font-size: 100%;
+    }
+
+}

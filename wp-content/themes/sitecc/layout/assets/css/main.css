@@ -1,0 +1,901 @@
+/* Fontes */
+
+
+@font-face {
+    font-family: 'Nobile';
+    src: url('../fonts/nobile.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nobile';
+    src: url('../fonts/nobile_bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nobile';
+    src: url('../fonts/nobile_italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nobile';
+    src: url('../fonts/nobile_bold_italic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*
+|   Custom CSS
+|   Lunardi
+*/
+
+.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+.btn-mobile {
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+    border-radius: 0;
+    padding: 0;
+    height: 40px;
+    margin: 0;
+}
+
+.btn-mobile * {
+    margin: auto 10px;
+}
+
+.menu-mobile {
+    padding-top: 43px;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    right: 0%;
+    background: white;
+    padding: 0 5px;
+    z-index: 2;
+    margin: 0;
+}
+
+.menu-mobile-item {
+    display: inline-block;
+    width: 100%;
+}
+
+.separador {
+    background: url('../img/separador.png');
+    clear: both;
+    height: 3px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+body {
+    background: url('../img/bg-pattern.png');
+    font-family: 'Nobile', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: url('../img/header-bg.png');
+    background-size: 100% 100%;
+    min-height: 374px;
+    position: relative;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.header-menu {
+    color: white;
+    text-align: justify;
+    font-weight: bold;
+    position: absolute;
+    top: 63px;
+    width: 515px;
+    right: 35px;
+}
+
+.header-menu a {
+    color: white;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, .9);
+}
+
+.header-menu:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    top: 90px;
+    left: 25px;
+}
+
+.redes-sociais {
+    position: absolute;
+    bottom: 23px;
+    right: 5px;
+}
+
+.redes-sociais img {
+    margin: 5px;
+}
+
+.header-banner-top {  /* Fix para falta do top-banner nas páginas diferentes da Index. Caso inserido por outros métodos causa quebra da fluidez da página */
+    position: absolute;
+    top: 253px;
+    margin: 0 !important;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner-top {
+    position: relative;
+    top: -123px;
+}
+
+.banner-bottom {
+    position: relative;
+    top: 110px;
+}
+
+.underlay {
+    z-index: -1;
+}
+
+.banner {
+    position: absolute;
+    top: -75px;
+    left: 0;
+    z-index: -2;
+}
+
+.menu-item:hover {
+    background: none !important;
+}
+
+#indicador {
+    position: absolute;
+    left: 950px;
+    top: 83px;
+    height: 7px;
+    z-index: 3;
+}
+
+.form-busca-imoveis {
+    margin: 0 50px;
+    padding-bottom: 20px;
+}
+
+.header-encontre {
+    color: #354453;
+    margin-left: 50px;
+}
+
+.conteudo-pagina {
+    background: white;
+}
+
+.conteudo-pagina h3 {
+    max-width: 710px;
+    text-align: justify;
+}
+
+.imoveis-conteudo {
+    padding: 20px 60px;
+    background: url('../img/imoveis-topfundo2.png') top center no-repeat,
+                url('../img/imoveis-fundo.png') center repeat-y;
+    background-size: 100%, 100%;
+    /* Bug-fix para Opera: background deslocava-se para a direita. */
+    background-position: 0 0, 0 50%; /* Resetado a posição do background */
+}
+
+.imovel-detalhe > img {
+    border-radius: 7px;
+}
+
+.imovel-detalhe {
+    /*position: absolute;*/
+    height: 100%;
+    padding: 10px 15px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 0 5px #b5e0fc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.imovel-descricao {
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.imovel-titulo {
+    font-weight: bold;
+    color: #809baf;
+}
+
+.imovel-valor {
+    color: #094378;
+    font-size: 135%;
+    font-weight: bold;
+}
+
+.imovel-botoes {
+    margin-left: 15px;
+}
+
+.imovel-botoes img {
+    margin: 2px 0;
+}
+
+.imoveis-conteudo {
+    text-align: center;
+}
+
+.imoveis-navegacao-esquerda {
+    float: left;
+}
+
+.imoveis-navegacao-direita {
+    float: right;
+}
+
+.imoveis-navegacao a {
+    clear: both;
+    height: 100px;
+}
+
+.paginacao-controle {
+    margin: 10px 10px 0 10px;
+    font-size: 130%;
+}
+
+.hotlink-container {
+    background: url('../img/bg-footer.png');
+    padding: 20px 0 0 0;
+}
+
+.hotlink {
+    color: white;
+    background: url('../img/bg-round.png') no-repeat;
+    background-size: 100% 100%;
+    padding: 0px 40px 40px;
+    min-height: 240px !important;
+    position: relative;
+}
+
+.hotlink a {
+    color: rgb(208, 236, 255);
+}
+
+.hotlink h3 {
+    text-align: left;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, .8);
+}
+
+.hotlink input[type="text"] {
+    color: white ;
+    background-color: #1b1820;
+    border-color: rgb(134, 134, 134);
+    border-width: 1px;
+}
+
+.hotlink button {
+    float: right;
+    font-family: 'nobile';
+    color: white ;
+    background-color: #1d202a !important;
+    border-color: rgb(134, 134, 134);
+    border-radius: 7px;
+    border-width: 1px;
+    padding: 4px 10px;
+}
+
+.mini-banners-container {
+    padding: 40px 0;
+}
+
+.footer {
+    padding-top: 40px;
+    color: white;
+    background: url('../img/footer-glow.png') top center no-repeat,
+                url('../img/bg-footer.png');
+}
+
+.footer img {
+    max-width: 255px;
+}
+
+.mini-logo {
+    margin-top: 55px;
+}
+
+.footer li, ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+}
+
+.floater {
+    float: left;
+    height: 50%;
+    width: 100%;
+    margin-bottom: -23px;
+}
+
+.footer-logo {
+    position: relative;
+    height: 46px;
+}
+
+.rodape {
+    margin: 0;
+    position: relative;
+}
+
+.mini-logo-duo {
+
+}
+
+.no-banner {
+    margin-top: -60px;
+    background: url('../img/imoveis-topfundo2.png') top center no-repeat, 
+                url('../img/imoveis-fundo.png') center repeat-y;
+    background-size: 100%, 100%;
+    /* Bug-fix para Opera: background deslocava-se para a direita. */
+    background-position: 0 0, 0 50%; /* Resetado a posição do background */
+    padding: 40px 75px;
+}
+
+.googlemaps {
+    border-radius: 10px;
+}
+
+.no-banner .googlemaps {
+    float: right;
+    border: rgba(0, 0, 0, .5) solid 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.contato-detalhe {
+    border: rgba(0, 0, 0, .4) solid 2px;
+    padding: 10px;
+}
+
+.contato-detalhe .googlemaps {
+    clear: both;
+    float: none;
+}
+
+.no-banner p {
+    text-align: justify;
+}
+
+.titulo-pagina {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+    margin-bottom: 50px;
+    text-align: left;
+    color: #467391;
+}
+
+.corretor-container {
+    background: white;
+    border: rgba(0, 0, 0, .2) solid 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.corretor-nome {
+    color: #094378;
+    font-weight: bold;
+    font-size: 165%;
+    line-height: 50px;
+}
+
+.corretor-indicador {
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.pgimoveis-descricao {
+    padding-top: 30px;
+}
+
+.imohitem .imovel-valor {
+    font-size: 180%;
+    font-style: italic;
+}
+
+.imo-heading {
+    border: 1px solid #d0d0d0;
+    border-radius: 1px;
+    box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.imohitem:first-of-type {
+    border: none;
+}
+
+.imohitem p {
+    text-align: center;
+}
+
+.imohitem {
+    text-align: center;
+    border-left: 1px solid #d0d0d0;
+}
+
+.imo-tp {
+    font-size: 27px;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.header-secao {
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.pgimoveis-secao {
+    margin-bottom: 30px;
+}
+
+.maps-localizacao-imovel {
+    background: white;
+    width: 100%;
+    height: 300px;
+}
+
+.parceiro {
+    border: 1px solid #d0d0d0;
+    border-radius: 1px;
+    box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.parceiro img {
+    max-height: 200px;
+    margin-right: 50px;
+}
+
+.bt-passapg {
+    margin: 0 15px;
+}
+
+.pagina-indicador {
+    background: white;
+    font-size: 80%;
+    padding: 2px 5px;
+    border: 1px solid rgb(0, 76, 173);
+    display: inline-block;
+    min-width: 23px;
+}
+
+.pagina-ativa {
+    background: rgb(207, 207, 207);
+}
+
+.mais-noticias {
+    position: absolute;
+    bottom: 40px;
+    right: 45px;
+}
+
+.noticia {
+    border: 1px solid #d0d0d0;
+    border-radius: 1px;
+    box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.noticia img {
+    max-height: 200px;
+    margin-right: 20px;
+}
+
+/* Fim Custom CSS */
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+    .header-banner-top {
+        top: 250px;
+    }
+
+    .banner-bottom {
+        top: 120px;
+    }
+
+    .imoveis-conteudo {
+        padding: 20px 115px;
+    }
+
+    .header-menu {
+        right: 85px;
+        width: 570px;
+    }
+
+    .footer img {
+        max-width: 315px;
+    }
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+    .header-banner-top {
+        top: 275px;
+    }
+
+    .banner-bottom {
+        top: 80px;
+    }
+
+    .imoveis-conteudo, .no-banner {
+        padding: 20px 40px;
+    }
+
+    .header-menu {
+        width: 415px;
+        right: 30px;
+    }
+
+    .header {
+        min-height: 290px;
+    }
+
+    .header-menu {
+        top: 42px;
+    }
+
+    #indicador {
+        top: 64px;
+    }
+
+    .banner-top {
+        top: -93px;
+    }
+
+    .header-banner-top {
+        top: 205px;
+    }
+
+    .footer img {
+        max-width: 150px;
+    }
+
+    .map-preview {
+        margin-top: 30px;
+    }
+
+    .rodape {
+        font-size: 80%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .hotlink input[type="text"] {
+        display: inline-block;
+        width: 91%;
+    }
+
+    .hotlink button {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .hotlink ol {
+        font-size: 85%;
+    }
+
+    .imovel-valor {
+        font-size: 105%;
+    }
+    
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+    .logo {
+        top: 0;
+    }
+
+    .header {
+        min-height: 210px;
+    }
+
+    .hotlink {
+        padding: 10px 95px;
+    }
+
+    .titulo-pagina {
+        margin-bottom: 10px;
+    }
+
+    .mini-logo {
+        margin-top: 0px;
+    }
+
+    .footer {
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .footer div {
+        margin: 20px auto 0;
+    }
+
+    .banner {
+        top: -40px;
+    }
+
+    .banner-top {
+        top: -59px;
+    }
+
+    .banner-bottom {
+        top: 55px;
+    }
+
+    .header-banner-top {
+        top: 160px;
+    }
+
+    .no-banner {
+        padding: 40px 30px;
+    }
+
+    .mais-noticias {
+        right: 80px;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .rodape span {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+    .banner-top {
+        top: -38px;
+    }
+
+    .banner-bottom {
+        top: 28px;
+    }
+
+    .imoveis-conteudo {
+        padding: 8px;
+    }
+
+    .redes-sociais {
+        display: none;
+    }
+
+    .header {
+        min-height: 120px;
+    }
+
+    .logo {
+        top: 0;
+        left: 0;
+    }
+
+    .hotlink {
+        padding: 0px 40px 40px;
+    }
+
+    .hotlink input[type='text'] {
+        width: 95%;
+    }
+
+    .bt-passapg {
+        margin: 0;
+    }
+
+    .header-banner-top {
+        top: 82px;
+    }
+
+    .conteudo-pagina h3 {
+        font-size: 20px;
+    }
+
+    .form-busca-imoveis button {
+        float: none;
+        width: 100%;
+    }
+
+    .imovel-titulo {
+        font-size: 12px;
+    }
+
+    .no-banner {
+        padding: 40px 10px;
+    }
+
+    .corretor-nome {
+        font-size: 110%;
+    }
+
+    .corretor-indicador {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .form-busca-imoveis > * {
+        width: 100%;
+    }
+
+    .mais-noticias {
+        right: 50px;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+
+    .parceiro img {
+        width: 100%;
+    }
+
+    .parceiro > * {
+        display: block !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    .hotlink button {
+        width: 100%;
+    }
+
+    form button {
+        display: block;
+        width: 100%;
+    }
+
+}
