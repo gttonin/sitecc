@@ -1,0 +1,59 @@
+body{
+
+	font-family: ;
+}
+
+.navbar-inverse{
+
+	border: none !important;
+	background: transparent; 
+}
+
+.menu-padrao {
+
+	background-image: url(/assets/img/textura_topo.jpg) !important;
+	margin: 0 auto;
+	padding: 20px 40px 30px 5px;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .open a,
+.navbar-inverse .navbar-nav a:hover
+{
+	background-color: #fff !important;
+	color:#000 !important;
+}
+.navbar-inverse .navbar-nav li a {
+
+	color: #fff;
+	font-size: 17px;
+}
+
+.navbar-nav li a {
+
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+}
+.navbar {
+	border-radius: 0px !important;
+}
+
+.navbar-collapse {
+
+}
+
+.nav li a {
+	padding: 25px 35px;
+}
+
+.navbar-nav li .dropdown-menu {
+
+	background-color: #99aa9f !important;
+}
+
+.dropdown-menu li a {
+
+	color: rgb(89,89,89) !important;
+}

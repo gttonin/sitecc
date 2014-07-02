@@ -1,38 +1,25 @@
-<div class="navbar visible-phone navbar-static-top">
-  <div class="navbar-inner">
-    <div class="container">
-
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-
-      <a class="brand" href="#">Menu</a>
-
-      <div class="nav-collapse collapse">
-        <?php
-          if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav pull-right'));
-          endif;
-        ?>
+<div class="menu-padrao">
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="/assets/img/logo_cc.png"></a>
       </div>
 
-    </div>
-  </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <?php
+            if (has_nav_menu('primary_navigation')) :
+              wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+            endif;
+          ?>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 </div>
-
-<div class="container corpo">
-
-  <div class="header">
-    <a href="<?php echo get_site_url() ?>" title="Ciência da Computação - UFFS">
-      <img class="logo" src="<?php echo get_template_directory_uri() ?>/assets/img/logo_uffs_branca_pequena.png" />
-    </a>
-
-    <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav header-menu hidden-phone'));
-      endif;
-    ?>
-  </div>
