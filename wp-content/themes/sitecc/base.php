@@ -10,7 +10,7 @@
         get_template_part('templates/header');
       }
     ?>
-    <div class="content conteudo-pagina clearfix">
+    <div class="content container conteudo-pagina clearfix">
       <div class="main" role="main">
         <?php include roots_template_path(); ?>
       </div>

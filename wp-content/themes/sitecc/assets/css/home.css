@@ -1,59 +1,123 @@
 body{
 
-	font-family: ;
+	font-family: 'Lato';
 }
 
-.navbar-inverse{
+
+.navbar{
 
 	border: none !important;
 	background: transparent; 
+	margin-bottom: 0;
+}
+
+.navbar-brand {
+	padding: 30px 60px 30px 15px;
+	height: auto;
 }
 
 .menu-padrao {
 
 	background-image: url(/assets/img/textura_topo.jpg) !important;
 	margin: 0 auto;
-	padding: 20px 40px 30px 5px;
+	padding: 0 40px 0px 5px;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 45px;
 }
 
-.navbar-inverse .navbar-nav .active a,
-.navbar-inverse .navbar-nav .open a,
-.navbar-inverse .navbar-nav a:hover
+.navbar .navbar-nav .active > a,
+.navbar .navbar-nav .open > a,
+.navbar .navbar-nav > li > a:hover
 {
-	background-color: #fff !important;
-	color:#000 !important;
+	background: #fff !important;
+	color:#444 !important;
 }
-.navbar-inverse .navbar-nav li a {
+.navbar .navbar-nav li a {
 
-	color: #fff;
-	font-size: 17px;
+	color: #fff !important;
+	font-size: 17px !important;
 }
 
-.navbar-nav li a {
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
 
-	color: #fff;
-	padding-top: 25px;
-	padding-bottom: 25px;
-
+	color: #444 !important;
 }
 .navbar {
 	border-radius: 0px !important;
 }
 
-.navbar-collapse {
-
+.nav > li > a {
+	padding: 55px 30px;
+	font-size: 17px !important;
 }
 
-.nav li a {
-	padding: 25px 35px;
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background: #fff;
 }
 
 .navbar-nav li .dropdown-menu {
 
-	background-color: #99aa9f !important;
+	background-color: #fff !important;
 }
 
-.dropdown-menu li a {
+.dropdown-menu {
 
-	color: rgb(89,89,89) !important;
+	box-shadow: none !important;
+	border:none !important;
+	margin-top: -1px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.28) !important;
+}
+
+html body .navbar .dropdown-menu li a {
+
+	color: #333 !important;
+	padding: 18px 20px;
+}
+
+.dropdown-menu li a:hover{
+
+	background: #eaeaea !important;
+
+}
+
+.desloca {
+	position: relative;
+	top:-40px;
+}
+
+.desloca > div {
+	position: relative;
+	top:40px;
+}
+.desloca .navbar {
+	position: relative;
+
+}
+
+.desloca .slider-wrapper {
+	position: relative;
+
+}
+
+.nivo-controlNav {
+	position: absolute;
+	right: 150px;
+	bottom: 12px;
+	z-index: 99;
+}
+
+.theme-default .nivo-controlNav a {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+	border: 0;
+	margin: 0 6px;
+	background: rgba(255, 255, 255, 0.79);
+	border-radius: 22px;
+	box-shadow: inset 1px 1px 3px rgba(0,0,0,0.79);
+
 }
