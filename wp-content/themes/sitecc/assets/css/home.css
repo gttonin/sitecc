@@ -121,3 +121,74 @@ html body .navbar .dropdown-menu li a {
 	box-shadow: inset 1px 1px 3px rgba(0,0,0,0.79);
 
 }
+
+.link {
+	margin:5px 2px 2px;
+}
+
+.ver-mais {
+	background: #fff;
+	padding: 5px 10px;
+	color: #aaa;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.ver-mais:hover {
+	color: #444;
+	text-decoration: none;
+}
+.painel-titulo {
+
+	background: #eaeaea;
+	padding: 5px 14px;
+	border-bottom: 1px solid #356C34;
+
+}
+.painel-titulo  h3 {
+	margin: 0;
+	text-transform: uppercase;
+	color: #666;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+
+.painel  table tr td > a {
+	margin: 0;
+	text-transform: uppercase;
+	color: #666 !important;
+	text-decoration: none !important;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.painel table tr td > a:hover {
+	color: #444 !important;
+	text-decoration: none !important;
+}
+
+.painel  ul li > a {
+	margin: 0;
+	text-transform: uppercase;
+	color: #666 !important;
+	text-decoration: none !important;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.painel ul li > a:hover {
+	color: #444 !important;
+	text-decoration: none !important;
+}
+
+.painel ul {
+	list-style: none;
+}
