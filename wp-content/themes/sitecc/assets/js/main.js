@@ -21,4 +21,15 @@ $(document).ready(function() {
 		lastSlide: function(){},        // Triggers when last slide is shown
 		afterLoad: function(){}         // Triggers when slider has loaded
 	});
+
+	$("#voltar-topo").on('click', function(e){
+		e.preventDefault();
+
+		$('html,body').animate({
+			scrollTop: 0
+		}, 2000);
+
+
+		return false;
+	})
 });

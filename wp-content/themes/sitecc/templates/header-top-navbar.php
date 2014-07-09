@@ -1,4 +1,4 @@
-<div class="menu-padrao <?php echo is_front_page() ? "desloca" : ""; ?>">
+<div class="menu-padrao <?php echo is_front_page() ? "desloca" : ""; ?>" id='menu'>
   <div class="">
     <nav class="navbar navbar-default" role="navigation">
       <div class="container">

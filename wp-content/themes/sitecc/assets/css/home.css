@@ -18,7 +18,7 @@ body{
 
 .menu-padrao {
 
-	background-image: url(/assets/img/textura_topo.jpg) !important;
+	background-image: url(../img/textura_topo.jpg) !important;
 	margin: 0 auto;
 	padding: 0 40px 0px 5px;
 	font-weight: bold;
@@ -122,8 +122,42 @@ html body .navbar .dropdown-menu li a {
 
 }
 
-.link {
-	margin:5px 2px 2px;
+.links-rapidos .row > div {
+	padding: 0 !important;
+}
+
+.link-rapido {
+	background: #3a6a34;
+	color: #fff;
+	display: block;
+	padding: 20px 30px;
+	margin:2px;
+	font-size: 22px;
+	text-align: center;
+	opacity: 0.5;
+	height: 96px;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.link-rapido.uffs {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.link-rapido.uffs img {
+	position: relative;
+	top: -7px;
+	left: -12px;
+}
+
+.link-rapido:hover{
+	
+	text-decoration: none;
+	color: #fff;
+	opacity: 1;
 }
 
 .ver-mais {
@@ -156,10 +190,12 @@ html body .navbar .dropdown-menu li a {
 	line-height: 30px;
 }
 
+.painel {
+	margin-bottom: 
+}
 
 .painel  table tr td > a {
 	margin: 0;
-	text-transform: uppercase;
 	color: #666 !important;
 	text-decoration: none !important;
 
@@ -173,22 +209,69 @@ html body .navbar .dropdown-menu li a {
 	text-decoration: none !important;
 }
 
-.painel  ul li > a {
-	margin: 0;
-	text-transform: uppercase;
-	color: #666 !important;
-	text-decoration: none !important;
+.painel table {
+	list-style: none;
+}
 
+.painel td {
+
+	padding: 7px 20px;
+}
+
+.rodape {
+	background: url(../img/textura_rodape.jpg) !important;
+	position: relative;
+	margin-top: 50px;
+	padding-top: 50px;
+}
+
+.rodape h3, .rodape a{
+
+	color: #fff;
+}
+
+.rodape a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	
 	-webkit-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
+.img-rodape {
 
-.painel ul li > a:hover {
-	color: #444 !important;
-	text-decoration: none !important;
+	margin: 15px;
+	padding: 7px 20px;
 }
 
-.painel ul {
-	list-style: none;
+.img-rede-sc {
+
+	margin: 15px;
+	margin-left: 0;
+	margin-right: 30px;
+
+}
+
+.redes-sociais {
+
+	text-align: left;
+}
+
+.busca input {
+
+	background: url(../img/lupa.png) no-repeat 95% center;
+	padding-right: 40px;
+}
+
+#voltar-topo {
+	background: #fff url(../img/seta_cima.png) no-repeat center center;
+	padding: 40px;
+	position: absolute;
+	top: -40px;
+	left: 45%;
+	display: block;
+	border-radius: 100px;
+	height: 45px;
+	width: 45px;
+	box-shadow: 0 2px 6px RGBA(0,0,0, .7);
 }

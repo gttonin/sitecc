@@ -8,31 +8,42 @@ Template Name: Pรกgina Inicial
 <div class="busca">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 col-lg-3 col-lg-offset-9">
-			<input type="text" class="form-control">
+			<input type="text" class="form-control" placeholder="Digite sua busca aqui">
 		</div>
 	</div>
 	
 </div>
+<p>&nbsp;</p>
 <div class="row">
 	
 	<div class="links-rapidos col-xs-12 col-sm-6 col-md-5  col-lg-4">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<a class="btn btn-lg btn-block btn-default link" href="http://www.uffs.edu.br/index.php">Site universidade</a>
+
+				<a class="link-rapido uffs" href="http://www.uffs.edu.br/index.php">
+					<img src="/assets/img/logo_uffs_link.png"> UFFS
+				</a>
+
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<a class="btn btn-lg btn-block btn-default link" href="moodle.uffs.edu.br">Moodle</a>
+				<a class="link-rapido" href="http://moodle.uffs.edu.br">
+					<img src="/assets/img/logo_moodle.png">
+				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<a class="btn btn-lg btn-block btn-default link" href="aluno.uffs.edu.br/login.xhtml">Portal do aluno</a>
+				<a class="link-rapido" href="http://aluno.uffs.edu.br/login.xhtml">Portal do aluno</a>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<a class="btn btn-lg btn-block btn-default link" href="http://www.uffs.edu.br/index.php?option=com_content&view=category&layout=blog&id=274&Itemid=853&site=biblio">Biblioteca</a>
+				<a class="link-rapido" href="http://www.uffs.edu.br/index.php?option=com_content&view=category&layout=blog&id=274&Itemid=853&site=biblio">
+					<img src="/assets/img/livro.png">
+					<br />
+					Biblioteca
+				</a>
 			</div>
 		</div>
 	</div>
@@ -82,6 +93,9 @@ Template Name: Pรกgina Inicial
 	      <?php endif ?>
 	</div>
 </div>
+
+<p>&nbsp;</p>
+
 <div class="row">
 	
 	<div class="painel col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
@@ -110,13 +124,15 @@ Template Name: Pรกgina Inicial
 	      ?>
 	     <?php $posts_array = get_posts( $args ); ?>
 	      <?php if ($posts_array): ?>
-	          <ul >
+	          <table>
 	            <?php foreach ($posts_array as $post): ?>
-	            <li>
-	              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
-	            </li>
+	            <tr>
+		            <td>
+		              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
+		            </td>
+	            </tr>
 	            <?php endforeach ?>
-	          </ul>
+	          </table>
 	      <?php endif ?>
 	</div>
 	<div class="painel col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
@@ -145,13 +161,15 @@ Template Name: Pรกgina Inicial
 	      ?>
 	     <?php $posts_array = get_posts( $args ); ?>
 	      <?php if ($posts_array): ?>
-	          <ul >
+	          <table >
 	            <?php foreach ($posts_array as $post): ?>
-	            <li>
-	              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
-	            </li>
+	              <tr>
+		            <td>
+	              		<a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
+	              </td>
+	              </tr>
 	            <?php endforeach ?>
-	          </ul>
+	          </table>
 	      <?php endif ?>
 	</div>
 	<div class="painel col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
@@ -180,13 +198,15 @@ Template Name: Pรกgina Inicial
 	      ?>
 	     <?php $posts_array = get_posts( $args ); ?>
 	      <?php if ($posts_array): ?>
-	          <ul >
+	          <table>
 	            <?php foreach ($posts_array as $post): ?>
-	            <li>
-	              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
-	            </li>
+	              <tr>
+		            <td>
+	              		<a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
+	               </td>
+	              </tr>
 	            <?php endforeach ?>
-	          </ul>
+	          </table>
 	      <?php endif ?>
 	</div>
 
