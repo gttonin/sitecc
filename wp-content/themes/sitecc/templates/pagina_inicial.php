@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Pรกgina Inicial
+Template Name: Página Inicial
 */
 
 ?>
@@ -103,7 +103,7 @@ Template Name: Pรกgina Inicial
 	<div class="painel col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 		<div class="clearfix painel-titulo">
 			<h3 class="pull-left">Blog</h3>
-			<a href="" class="ver-mais pull-right">
+			<a href="<?php echo get_site_url() ?>/blog" class="ver-mais pull-right">
 				ver mais <span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
@@ -141,7 +141,7 @@ Template Name: Pรกgina Inicial
 	<div class="painel col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 		<div class="clearfix painel-titulo">
 			<h3 class="pull-left">Eventos</h3>
-			<a href="" class="ver-mais pull-right">
+			<a href="<?php echo get_site_url() ?>/evento" class="ver-mais pull-right">
 				ver mais <span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
@@ -179,7 +179,7 @@ Template Name: Pรกgina Inicial
 	<div class="painel col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 		<div class="clearfix painel-titulo">
 			<h3 class="pull-left">Oportunidades</h3>
-			<a href="" class="ver-mais pull-right">
+			<a href="<?php echo get_site_url() ?>/oportunidade" class="ver-mais pull-right">
 				ver mais <span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
@@ -214,8 +214,4 @@ Template Name: Pรกgina Inicial
 	          </table>
 	      <?php endif ?>
 	</div>
-
 </div>
-
-
-
