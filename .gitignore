@@ -1,1 +1,4 @@
 /wp-config.php
+/wp-content/debug.log
+/assets/*
+/wp-content/uploads/*
