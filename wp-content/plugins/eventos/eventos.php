@@ -11,6 +11,8 @@ function inicializa_plugin_eventos() {
 		'public' => true,
 		"menu_icon" => "dashicons-calendar",
 		"menu_position" => 5,
+		"has_archive" => true,
+		"supports" => array("title", "editor", "thumbnail"),
 		'labels'  => array(
 
       		'name'               =>  'Eventos',
@@ -100,6 +102,7 @@ function eventos_carrega_metabox_local($post) {
 	$complemento = get_post_meta($post->ID, "complemento", true );
 	$cidade = get_post_meta($post->ID, "cidade", true );
 	$estado = get_post_meta($post->ID, "estado", true );
+	
 	echo <<<HTML
 <table class="form-table">
 	<tr>

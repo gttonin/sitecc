@@ -8,35 +8,44 @@
 
 add_action("admin_enqueue_scripts","noticias_carrega_script");
 
-
-
-
 function inicializa_plugin_noticias() {
-    $args = array(
-		'public' => true,
-		"menu_position" => 5,
-		"taxonomies" => array("category"),
-		'labels'  => array(
+  register_taxonomy(  
+    'categorias_noticias',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces). 
+    'noticia',        //post type name
+    array(  
+      'hierarchical' => true,  
+      'label' => 'Categorias',  //Display name
+      'query_var' => true,
+      'rewrite' => array(
+        'slug' => 'categorias', // This controls the base slug that will display before each term
+        'with_front' => false // Don't display the category base before 
+      )
+    )  
+  );
 
-      		'name'               =>  'Noticias',
-			'singular_name'      =>  'Noticia',
-			'menu_name'          =>  'Noticias',
-			'name_admin_bar'     =>  'Noticia' ,
-			'add_new'            =>  'Adicionar nova' ,
-			'add_new_item'       =>  'Adicionar nova Noticia' ,
-			'new_item'           =>  'Nova Noticia' ,
-			'edit_item'          =>  'Editar Noticia',
-			'view_item'          =>  'Ver Noticia',
-			'all_items'          =>  'Listagem de Noticias' ,
-			'search_items'       =>  'Buscar Noticias',
-			'parent_item_colon'  =>  'Noticia pai:',
-			'not_found'          =>  'Nenhuma noticia encontrado.',
-			'not_found_in_trash' =>  'Nenhuma noticia encontrado na lixeira.',
+  $args = array(
+  	'public' => true,
+  	"menu_position" => 5,
+  	"taxonomies" => array("categorias_noticias"),
+  	'labels'  => array(
+    	'name'               =>  'Noticias',
+  		'singular_name'      =>  'Noticia',
+  		'menu_name'          =>  'Noticias',
+  		'name_admin_bar'     =>  'Noticia' ,
+  		'add_new'            =>  'Adicionar nova' ,
+  		'add_new_item'       =>  'Adicionar nova Noticia' ,
+  		'new_item'           =>  'Nova Noticia' ,
+  		'edit_item'          =>  'Editar Noticia',
+  		'view_item'          =>  'Ver Noticia',
+  		'all_items'          =>  'Listagem de Noticias' ,
+  		'search_items'       =>  'Buscar Noticias',
+  		'parent_item_colon'  =>  'Noticia pai:',
+  		'not_found'          =>  'Nenhuma noticia encontrado.',
+  		'not_found_in_trash' =>  'Nenhuma noticia encontrado na lixeira.',
+    )
+  );
 
-      	)
-    );
-
-    register_post_type( 'noticia', $args ); // aqui sempre singular
+  register_post_type( 'noticia', $args ); // aqui sempre singular
     
 }
 

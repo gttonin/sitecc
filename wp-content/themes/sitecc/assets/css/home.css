@@ -8,6 +8,27 @@
 	margin-bottom: 0;
 }
 
+.navbar .navbar-toggle {
+	margin-top: 30px;
+	padding-top: 15px;
+	border: none;
+}
+
+.navbar .navbar-toggle span {
+	width: 48px;
+	height: 3px;
+	margin-bottom: 8px;
+	background: #fff;
+}
+
+.navbar .navbar-toggle:hover {
+	background: #fff;
+}
+
+.navbar .navbar-toggle:hover span {
+	background: #444;
+}
+
 .navbar-brand {
 	padding: 30px 60px 30px 15px;
 	height: auto;
