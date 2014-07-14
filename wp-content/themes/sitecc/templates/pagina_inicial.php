@@ -51,7 +51,7 @@ Template Name: Pรกgina Inicial
 	<div class="painel col-xs-12 col-sm-6 col-md-7 col-lg-8 ">
 		<div class="clearfix painel-titulo">
 			<h3 class="pull-left">Notícias</h3>
-			<a href="" class="ver-mais pull-right">
+			<a href="<?php echo get_site_url(); ?>/noticia" class="ver-mais pull-right">
 				ver mais <span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>

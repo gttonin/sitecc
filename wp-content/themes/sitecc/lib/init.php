@@ -26,9 +26,9 @@ add_action('after_setup_theme', 'roots_setup');
 if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
 
 register_sidebar(array(
-  'name' => 'Footer left',
-  'id'   => 'footer-left',
-  'description'   => 'Footer left'
+  'name' => 'Menu Notícias',
+  'id'   => 'menu-noticias',
+  'description'   => 'Menu lateral na página de notícias'
 ));
 
 // Define helper constants
