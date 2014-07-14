@@ -20,7 +20,7 @@ $ambientes = array (
     'dbhost'   => 'localhost',
     'database' => 'sitecc',
     'user'     => 'root',
-    'pass'     => 'mauriciodev'
+    'pass'     => 'enter'
   ),
   'producao' => array (
     'host'     => 'http://staging-esuffs.rhcloud.com', 
