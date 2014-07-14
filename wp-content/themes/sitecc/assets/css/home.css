@@ -241,6 +241,7 @@ html body .navbar .dropdown-menu li a {
 	position: relative;
 	margin-top: 50px;
 	padding-top: 50px;
+	margin-bottom: -12px;
 }
 
 .rodape h3, .rodape a{
