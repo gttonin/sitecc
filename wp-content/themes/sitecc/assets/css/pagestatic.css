@@ -1,0 +1,66 @@
+
+.main .page-header {
+	border:none;
+}
+
+.main .page-header h1 {
+	line-height:40px;
+	padding-left: 10px;
+	margin: 10px 0px 30px;
+	border:none
+}
+
+.main .page-header {
+	width:75%;
+	float:left;
+}
+
+.main .ativo {
+	width:75%;
+	float:left;
+}
+
+.main .tittle {
+	padding:15px 5px;
+	background:#EFE;
+	width:250px;
+	text-align:right;
+	border-bottom:1px solid #0E3D0E;
+	margin:0px;
+}
+
+.main .sub-menu-page {
+	max-width:25%;
+	float:left;
+	box-shadow:0px 0px 1px #AAA;
+}
+
+.main .sub-menu-page ul{
+	display:table;
+	padding-left:0px;
+	margin:0px;	
+}
+
+.main .sub-menu-page li {
+	list-style:none;
+	padding:15px 5px;
+	background:#EFE;
+	width:250px;
+	text-align:right;
+	border-bottom:1px solid #DFD;
+}
+
+.main .sub-menu-page li a {
+	color:black;
+	display:block;
+	width:100%;
+	height:100%;  
+}
+
+.main .sub-menu-page li:hover {
+	background:#EEE;
+}
+
+.main .sub-menu-page li:hover a {
+	text-decoration:none;
+}
