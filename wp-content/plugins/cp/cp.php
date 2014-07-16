@@ -15,6 +15,7 @@ function inicializa_plugin_cps() {
 		"menu_icon" => "dashicons-lightbulb",
 		"taxonomies" => array("category"),
 		"supports" => array( "title", "editor", "thumbnail" ),
+		"has_archive"=> true,
 		'labels'  => array(
 
       		'name'               =>  'Clube Programação',

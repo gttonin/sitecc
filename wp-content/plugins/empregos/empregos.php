@@ -13,6 +13,7 @@ function inicializa_plugin_empregos() {
 		'public' => true,
 		"menu_position" => 5,
 		"menu_icon" => "dashicons-businessman",
+		"has_archive"=> true,
 		'labels'  => array(
 
       		'name'               =>  'Empregos',

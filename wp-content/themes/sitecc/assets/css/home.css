@@ -194,6 +194,7 @@ html body .navbar .dropdown-menu li a {
 	color: #444;
 	text-decoration: none;
 }
+
 .painel-titulo {
 
 	background: #eaeaea;
@@ -302,4 +303,31 @@ html body .navbar .dropdown-menu li a {
 	font-size: 10px;
 	color: #aaa;
 	font-style: italic;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.painel {
+		margin-top: 40px;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+	
 }

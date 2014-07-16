@@ -15,6 +15,7 @@ function inicializa_plugin_blogs() {
 		"menu_icon" => "dashicons-welcome-widgets-menus",
 		"taxonomies" => array("category"),
 		"supports" => array( "title", "editor", "thumbnail" ),
+		"has_archive"=> true,
 		'labels'  => array(
 
       		'name'               =>  'Blog',
