@@ -132,3 +132,15 @@ function is_element_empty($element) {
   $element = trim($element);
   return empty($element) ? false : true;
 }
+
+function disqus_embed($disqus_shortname) {
+    global $post;
+    wp_enqueue_script('disqus_embed','http://'.$disqus_shortname.'.disqus.com/embed.js');
+    return '<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = "'.$disqus_shortname.'";
+        var disqus_title = "'.$post->post_title.'";
+        var disqus_url = "'.get_permalink($post->ID).'";
+        var disqus_identifier = "'.$disqus_shortname.'-'.$post->ID.'";
+    </script>';
+}
