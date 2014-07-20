@@ -1,0 +1,104 @@
+.oportunidades .entry-content p{
+
+	font-size: 18px;
+	line-height: 36px;
+	color: #444;	
+}
+
+.oportunidades .entry-content {
+	margin-top: 30px;
+}
+
+.oportunidades h1 {
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+.oportunidades .formato-data {
+	font-size: 14px;
+}
+
+.oportunidades .imagem-capa {
+	border-radius: 10px;
+}
+
+.oportunidades .oportunidade-listagem img {
+	max-width: 90% !important;
+	height: auto !important;
+}
+
+.oportunidades .oportunidade-listagem {
+	padding: 15px 20px;
+	border: 1px solid #d0d0d0;
+	margin: 25px 0;
+	box-shadow: 3px 3px 7px rgba(0,0,0,0.15);
+}
+
+.oportunidades .oportunidade-listagem:first-of-type {
+	margin-top: 0;
+}
+
+.oportunidades .oportunidade-listagem .ver-mais {
+	border: 1px solid #d0d0d0;
+	border-radius: 2px;
+}
+
+
+.oportunidades .oportunidade-listagem .formato-data{
+	font-size: 14px;
+}
+
+.oportunidades .oportunidade-listagem h3 a {
+	color: #333;
+}
+
+.oportunidades .oportunidade-listagem h3 a:hover{
+	text-decoration: none;
+}
+
+.oportunidades .oportunidade-listagem p{
+	color: #555;
+}
+
+.menu-oportunidades li{
+	list-style-type: none !important;
+
+}
+
+.menu-oportunidades li a{
+	color: #444;
+}
+
+.menu-oportunidades li a:hover{
+	text-decoration: none;
+}
+
+.widgettitle {
+	display: none;
+}
+
+.menu-oportunidades ul{
+	border: 1px solid #d0d0d0;
+	padding: 0px;
+}
+
+.menu-oportunidades ul li {
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.menu-oportunidades ul li a{
+	padding: 12px 20px;
+	display: block;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.menu-oportunidades ul li a:hover{
+	padding-left: 35px;
+	background: #eaeaea;
+}
+
+.menu-oportunidades ul li:last-of-type {
+	border-bottom: none;
+}
