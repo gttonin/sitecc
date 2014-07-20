@@ -120,6 +120,7 @@ function formandos_inicializa()
 		"menu_position" => 5,
 		"menu_icon" => "dashicons-admin-users",
 		"supports" => array( "title", "editor", "thumbnail" ),
+		"has_archive"=> true,
 		"register_meta_box_cb" => "formandos_inicializa_metabox"
 	));
 

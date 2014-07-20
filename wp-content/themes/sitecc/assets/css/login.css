@@ -1,5 +1,6 @@
-body {
-	background: #000;
+html, body {
+	background: url(../img/textura_topo.jpg);
+	height: auto !important;
 }
 
 h1, p.message {
@@ -12,6 +13,10 @@ h1, p.message {
 	top: 40px;
 	left: 100px;
 	font-size: 18px !important;
+}
+
+#login {
+	padding: 0;
 }
 
 #loginform {
@@ -31,4 +36,12 @@ h1, p.message {
 
 #loginform p:nth-child(1){
 	margin-top: 70px; 
+}
+
+.login #backtoblog a, .login #nav a {
+	color: #fff;
+}
+
+.login #backtoblog a:hover, .login #nav a:hover {
+	color: #fff;
 }

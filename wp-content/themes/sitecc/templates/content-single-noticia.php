@@ -14,5 +14,8 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
+    <div class="comentarios">
+      <?php echo disqus_embed("sitedecinciadacomputaouffs"); ?>
+    </div>
   </article>
 <?php endwhile; ?>

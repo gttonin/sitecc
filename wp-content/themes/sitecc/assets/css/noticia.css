@@ -102,3 +102,7 @@
 .menu-noticias ul li:last-of-type {
 	border-bottom: none;
 }
+
+.noticia .comentarios {
+	margin-top: 50px;
+}

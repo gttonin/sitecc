@@ -10,6 +10,9 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+.formCont{width:280px;height:30px;border:1px solid #fff;}
+.formContArea{width:280px;height:80px;}
+.btnForm{box-shadow: 1px 1px 2px #999;width:80px;}
 body {
   margin: 0;
 }

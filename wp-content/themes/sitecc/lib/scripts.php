@@ -6,8 +6,7 @@
  * 1. /theme/assets/css/bootstrap.css
  * 2. /theme/assets/css/bootstrap-responsive.css
  * 3. /theme/assets/css/app.css
- * 4. /theme/assets/css/pagestatic.css
- * 5. /child-theme/pagestatic.css (if a child theme is activated)
+ * 4. /child-theme/style.css (if a child theme is activated)
  *
  * Enqueue scripts in the following order:
  * 1. jquery-1.9.1.min.js via Google CDN
@@ -23,7 +22,8 @@ function roots_scripts() {
   wp_enqueue_style('sitecc_home', get_template_directory_uri() . '/assets/css/home.css', null, null);
   wp_enqueue_style('sitecc_noticia', get_template_directory_uri() . '/assets/css/noticia.css', null, null);
   wp_enqueue_style('sitecc_eventos', get_template_directory_uri() . '/assets/css/eventos.css', null, null);
-  wp_enqueue_style('content_page', get_template_directory_uri() . '/assets/css/pagestatic.css', null, null);
+  wp_enqueue_style('sitecc_formandos', get_template_directory_uri() . '/assets/css/formandos.css', null, null);
+  wp_enqueue_style('content-page', get_template_directory_uri() . '/assets/css/pagestatic.css', null, null);
   
   // Load style.css from child theme
   if (is_child_theme()) {
@@ -72,4 +72,3 @@ function roots_jquery_local_fallback($src, $handle) {
 
   return $src;
 }
-
