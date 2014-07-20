@@ -1,3 +1,4 @@
+<div class = 'docentes'>
 <div class="conteudo container-fluid docentes">
 <?php if (!have_posts()) : ?>
   <div class="alert alert-block fade in">
@@ -7,32 +8,61 @@
 <?php endif; ?>
 
 <?php if (have_posts()):?>
-  <div class="docentes">
+  <div class="docente">
   <?php while (have_posts()) : the_post(); ?>
-    <p>sdgjs</p>
+
     <div class='docente clearfix'>
       
       <h3><?php echo the_title( null, null, false ) ?></h3>
 
+
+      <div class = 'docente_imagem'>
       <?php
-        $telefone = get_post_meta( get_the_ID(), 'telefone', true );
-        $email = get_post_meta( get_the_ID(), 'email', true );
-        $creci = get_post_meta( get_the_ID(), 'creci', true );
 
-        if ($creci) {
-          echo "<p>CRECI: <strong>{$creci}</strong></p>";
-        }
+        echo get_the_post_thumbnail($page->ID, 'thumbnail');
 
-        if ($telefone) {
-          echo "<p>Telefone: <strong>{$telefone}</strong></p>";
+        $cargo = get_post_meta( get_the_ID(), 'docentes_cargo', true );
+        $email = get_post_meta( get_the_ID(), 'docentes_email', true );
+        $site = get_post_meta( get_the_ID(), 'docentes_website', true );
+        $lattes = get_post_meta( get_the_ID(), 'docentes_lattes', true );
+        $especialidade = get_post_meta( get_the_ID(), 'docentes_especialidade', true );
+        ?>
+        </div>
+        <div class = 'docente_contato'>
+
+        <?php
+        if ($cargo) {
+          echo "<p>cargo: <strong>{$cargo}</strong></p>";
         }
 
         if ($email) {
           echo "<p>Email: <a href=\"mailto:{$email}\">{$email}</a></p>";
         }
+
+        if ($site) {
+          echo "<p>Lattes: <a href=\"$site\">{$email}</a></p>";
+        }
+
+        if ($lattes) {
+          echo "<p>Lattes: <a href=\"$lattes\">{$lattes}</a></p>";
+        }
+
+        if ($especialidade) {
+          echo "<p>Especialidade: <strong>{$especialidade}</strong></p>";
+        }
+        ?>
+          </div>
+
+          <div class = 'docente_resumo'>
+        <?php
+
+        echo "<p>".the_excerpt() ." </p>";
+
       ?>
+      </div>
     </div>
   <?php endwhile; ?>
   </div>
 <?php endif ?>
+</div>
 </div>

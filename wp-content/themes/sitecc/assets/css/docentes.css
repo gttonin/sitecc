@@ -1,0 +1,16 @@
+
+
+
+.docentes .docente.clearfix{
+	width: 80%;
+	margin:5px auto;
+    box-shadow: 1px 1px 1px #444;
+    border: 1px solid #444;
+    padding: 5px;
+}
+
+.docentes .docente.clearfix .docente_imagem{
+    width: 33%;
+    float: left;
+    min-width: 33%;
+}

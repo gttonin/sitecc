@@ -1,0 +1,48 @@
+
+
+ 1 56 61;//internet2
+ 1 38 54;//Omi1
+ 1 38 54;//omnicon
+
+
+1 & VIA Network & 9 & 12\\ 
+2 & Abilinecore & 10 & 13\\
+3 & BREN & 10 & 11\\
+4 & Learn & 10 & 11\\
+5 & RNP & 10 & 12\\
+6 & Compuserv & 11 & 14\\
+7 & Cesnet & 12 & 19\\
+8 & Cesnet1 & 12 & 19\\
+9 & VBNS & 12 & 17\\
+10 & ITALY & 14 & 29\\
+11 & NSF Network& 14 & 21\\
+12 & Austria & 15 & 22\\
+13 & Austria Aconet & 15 & 22\\
+14 & Hibernia & 15 & 23\\
+15 & Mzima & 15 & 19\\
+16 & Garr-b Changed & 16 & 27\\
+17 & ARNES & 17 & 20\\
+18 & Germany & 17 & 26\\
+19 & Redisnet & 17 & 28\\
+20 & CANARIE & 19 & 26\\
+21 & EON & 19 & 37\\
+22 & Memorex & 19 & 24\\
+23 & NLR & 19 & 23\\
+24 & ARPANET & 20 & 32\\
+25 & Sweden & 20 & 24\\
+26 &Pionier &21 &25\\
+27 & Bulgaria &23 & 24\\
+28 & COX & 24 & 40\\
+29 & Sanet & 25 & 28\\
+30 & Portugal& 26 & 36\\
+31 & New Network & 26 & 31\\
+32 & Renater & 27 & 35\\
+33 & CERNET & 29 & 45\\
+34 & IBN31& 31 & 47\\
+35 & LONI & 33 & 37\\
+36 & Metrona & 33 & 41\\
+37 & COST37& 37 & 57\\
+38 & OMI1& 38 & 54\\
+39 & Omicon& 38 & 54\\
+40 & INTERNET2 & 56& 61\\
+41 & USA100 & 100 & 171\\
