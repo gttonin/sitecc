@@ -38,9 +38,7 @@
 
 .sub-menu-page .tittle {
 	padding:15px 5px;
-	background:#EFE;
 	width:250px;
-	text-align:right;
 	border-bottom:1px solid #0E3D0E;
 	margin:0px;
 }
@@ -49,6 +47,11 @@
 	max-width:25%;
 	float:left;
 	box-shadow:0px 0px 1px #AAA;
+	background: #eaeaea;
+}
+
+.sub-menu-page ul li:hover {
+	background: #fff;
 }
 
 .sub-menu-page ul{
@@ -60,7 +63,6 @@
 .sub-menu-page li {
 	list-style:none;
 	padding:15px 5px;
-	background:#EFE;
 	width:250px;
 	text-align:right;
 	border-bottom:1px solid #DFD;
@@ -84,7 +86,7 @@
 .page-static .anexos {
 	width:99%;
 	float:left;
-	border-top:1px solid #000;
+	border-top:1px solid #C7C7C7;
 	margin-top: 20px;
 }
 
