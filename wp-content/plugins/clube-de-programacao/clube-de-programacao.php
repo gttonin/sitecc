@@ -6,10 +6,8 @@
  * Author: Gustavo Favero, Bruno Furtado
  */
 
-
-
 function inicializa_plugin_cps() {
-    $args = array(
+  $args = array(
 		'public' => true,
 		"menu_position" => 5,
 		"menu_icon" => "dashicons-lightbulb",
@@ -18,7 +16,7 @@ function inicializa_plugin_cps() {
 		"has_archive"=> true,
 		'labels'  => array(
 
-      		'name'               =>  'Clube Programação',
+      'name'               =>  'Clube Programação',
 			'singular_name'      =>  'Clube Programação',
 			'menu_name'          =>  'Clube Programação',
 			'name_admin_bar'     =>  'Clube Programação' ,
@@ -36,8 +34,7 @@ function inicializa_plugin_cps() {
       	)
     );
 
-    register_post_type( 'cp', $args ); // aqui sempre singular
-    
+    register_post_type( 'clube-de-programacao', $args ); // aqui sempre singular
 }
 
 add_action( 'init', 'inicializa_plugin_cps' ); // gancho de inicialização -- inserindo nosso código no wordpress
