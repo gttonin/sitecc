@@ -95,7 +95,7 @@
 }
 
 .page-static .anexos .thumbnail {
-	display:initial;
+	display:inline-block;
 	margin-bottom: 0px;
 	padding: 25px 20px;
 	color:#000;

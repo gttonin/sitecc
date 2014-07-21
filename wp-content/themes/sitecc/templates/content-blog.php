@@ -1,55 +1,53 @@
-<div class="conteudo container-fluid pgempreendimentos">
-<?php if (!have_posts()) : ?>
-  <div class="alert alert-block fade in">
-    <a class="close" data-dismiss="alert">&times;</a>
-    <p><?php _e('Sorry, no results were found.', 'roots'); ?></p>
+<div class="conteudo blog">
+  <div class="posts">
+    <?php while (have_posts()) : the_post(); ?>
+    <div class="post-unity">
+      <div class="post-title">
+        <h3><?php the_title() ?></h3>      
+      </div>
+      <div class="post-resume">
+        <?php the_excerpt(); ?> 
+      </div>
+      <div class="post-data">
+        <span class="post-date">
+        <?php  echo get_the_date(); ?>
+        </span>
+        <span class="post-category">
+          <?php the_category(); ?>
+        </span>
+        <?php $comments_count = wp_count_comments();
+          echo '<span class="post-coments">' . $comments_count->total_comments . " comentarios </span>";
+        ?>
+        <a class="post-readmore" href="<?php get_permalink(); ?>" >Leia mais</a> 
+      </div>
+    </div>  
+    <?php endwhile; ?>
   </div>
-<?php endif; ?>
+  <div class="nav-menu">
+    <div class="nav-date">
 
-<?php if (have_posts()):?>
-  <div class="corretores">
-  <?php while (have_posts()) : the_post(); ?>
-    <p>sdgjs</p>
-    <div class='corretor clearfix'>
-      
-      <h3><?php echo the_title( null, null, false ) ?></h3>
-
-      <?php
-        $telefone = get_post_meta( get_the_ID(), 'telefone', true );
-        $email = get_post_meta( get_the_ID(), 'email', true );
-        $creci = get_post_meta( get_the_ID(), 'creci', true );
-
-        if ($creci) {
-          echo "<p>CRECI: <strong>{$creci}</strong></p>";
-        }
-
-        if ($telefone) {
-          echo "<p>Telefone: <strong>{$telefone}</strong></p>";
-        }
-
-        if ($email) {
-          echo "<p>Email: <a href=\"mailto:{$email}\">{$email}</a></p>";
-        }
-      ?>
     </div>
-  <?php endwhile; ?>
-  </div>
-<?php endif ?>
-</div>
+    <div class="nav-category">
+    <?php
+      $args = array(
+          'type'                     => 'post',
+          'child_of'                 => 0,
+          'parent'                   => '',
+          'orderby'                  => 'name',
+          'order'                    => 'ASC',
+          'hide_empty'               => 1,
+          'hierarchical'             => 1,
+          'exclude'                  => '',
+          'include'                  => '',
+          'number'                   => '',
+          'taxonomy'                 => 'category',
+          'pad_counts'               => false 
 
-<?php if ($wp_query->max_num_pages > 1) : ?>
-  <nav id="post-nav">
-    <ul class="pager">
-      <?php if (get_next_posts_link()) : ?>
-        <li class="previous"><?php next_posts_link("Empreendimentos anteriores"); ?></li>
-      <?php else: ?>
-        <li class="previous disabled"><a>Empreendimentos Anteriores</a></li>
-      <?php endif; ?>
-      <?php if (get_previous_posts_link()) : ?>
-        <li class="next"><?php previous_posts_link("Próximos Empreendimentos"); ?></li>
-      <?php else: ?>
-        <li class="next disabled"><a>Próximos Empreendimentos</a></li>
-      <?php endif; ?>
-    </ul>
-  </nav>
-<?php endif; ?>
+        ); 
+       $categories = get_categories( $args); 
+
+       ?> 
+      <?php dynamic_sidebar('menu-noticias' ); ?>
+    </div>
+  </div>
+</div>
