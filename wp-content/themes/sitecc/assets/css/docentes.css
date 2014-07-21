@@ -1,16 +1,143 @@
+.docente .entry-content p{
+
+	font-size: 18px;
+	line-height: 36px;
+	color: #444;	
+}
+
+.docente .entry-content {
+	margin-top: 30px;
+}
+
+.docente h1 {
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+.docente .formato-data {
+	font-size: 14px;
+}
+
+.docente .imagem-capa {
+	border-radius: 10px;
+}
+
+.docentes .docente-listagem img {
+	max-width: 90% !important;
+	height: auto !important;
+}
+
+.docentes .docente-listagem {
+	padding: 15px 20px;
+	border: 1px solid #d0d0d0;
+	margin: 25px 0;
+	box-shadow: 3px 3px 7px rgba(0,0,0,0.15);
+}
+
+.docentes .docente-listagem:first-of-type {
+	margin-top: 0;
+}
+
+.docentes .docente-listagem .ver-mais {
+	border: 1px solid #d0d0d0;
+	border-radius: 2px;
+}
 
 
+.docentes .docente-listagem .formato-data{
+	font-size: 14px;
+}
+
+.docentes .docente-listagem h3 a {
+	color: #333;
+}
+
+.docentes .docente-listagem h3 a:hover{
+	text-decoration: none;
+}
+
+.docentes .docente-listagem p{
+	color: #555;
+}
+
+.menu-cps li{
+	list-style-type: none !important;
+
+}
+
+.menu-cps li a{
+	color: #444;
+}
+
+.menu-cps li a:hover{
+	text-decoration: none;
+}
+
+.widgettitle {
+	display: none;
+}
+
+.menu-cps ul{
+	border: 1px solid #d0d0d0;
+	padding: 0px;
+}
+
+.menu-cps ul li {
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.menu-cps ul li a{
+	padding: 12px 20px;
+	display: block;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.menu-cps ul li a:hover{
+	padding-left: 35px;
+	background: #eaeaea;
+}
+
+.menu-cps ul li:last-of-type {
+	border-bottom: none;
+}
+
+
+/*
+pra cima é o que foi pego de todos os outros
+aqui pra baixo é o que fizemos:
+*/
 
 .docentes .docente.clearfix{
 	width: 80%;
 	margin:5px auto;
-    box-shadow: 1px 1px 1px #444;
-    border: 1px solid #444;
+	margin-bottom: 50px;
+    border-top: 1px solid #aaa;
     padding: 5px;
 }
 
-.docentes .docente.clearfix .docente_imagem{
-    width: 33%;
-    float: left;
-    min-width: 33%;
+.docentes .docente_nome {
+	
+	
 }
+
+.docentes .docente.clearfix .docente_imagem{
+	width: 150px;
+	height: 150px;
+    float: left;
+    -webkit-border-radius: 75px;
+    background-color: black;
+}
+
+.docentes .docente.clearfix .docente_contato{
+	margin-left: 15%;
+	float: left;
+	width: 33%;
+}
+
+.docentes .docente.clearfix .docente_resumo{
+	float: left;
+	width: 33%;
+}
+

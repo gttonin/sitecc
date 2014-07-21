@@ -12,14 +12,16 @@
   <?php while (have_posts()) : the_post(); ?>
 
     <div class='docente clearfix'>
-      
-      <h3><?php echo the_title( null, null, false ) ?></h3>
-
+      <div class='docente_nome'>
+        <h3><?php echo the_title( null, null, false ) ?></h3>
+      </div>
 
       <div class = 'docente_imagem'>
       <?php
+        /*Seto a class do thumbnail manualmente pelo $att, porque antes não estava fazendo diferenca.*/
+        $att = array('class' => 'docente_imagem');
 
-        echo get_the_post_thumbnail($page->ID, 'thumbnail');
+        echo get_the_post_thumbnail($page->ID, 'thumbnail',$att);
 
         $cargo = get_post_meta( get_the_ID(), 'docentes_cargo', true );
         $email = get_post_meta( get_the_ID(), 'docentes_email', true );
@@ -32,7 +34,7 @@
 
         <?php
         if ($cargo) {
-          echo "<p>cargo: <strong>{$cargo}</strong></p>";
+          echo "<p>Cargo: <strong>{$cargo}</strong></p>";
         }
 
         if ($email) {
@@ -40,7 +42,7 @@
         }
 
         if ($site) {
-          echo "<p>Lattes: <a href=\"$site\">{$email}</a></p>";
+          echo "<p>Site: <a href=\"$site\">{$site}</a></p>";
         }
 
         if ($lattes) {
