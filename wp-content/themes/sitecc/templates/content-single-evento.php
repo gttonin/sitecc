@@ -8,7 +8,7 @@
       <?php endif ?>
       <div class="col-xs-12 col-sm-8 col-md-8  col-lg-8">
         <h1 class="entry-title"><?php the_title(); ?></h1>
-        <p class="formato-data"><?php echo formata_data(get_the_date()); ?></p>
+        <p class="formato-data"><?php echo formata_data(get_the_date('U')); ?></p>
       </div>
     </header>
     <div class="entry-content">

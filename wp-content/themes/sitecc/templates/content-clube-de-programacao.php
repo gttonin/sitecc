@@ -37,7 +37,7 @@
           </header>
           <p>&nbsp;</p>
           <div class="clearfix">
-              <p class="formato-data pull-left"><?php echo formata_data(get_the_date()); ?></p>
+              <p class="formato-data pull-left"><?php echo formata_data(get_the_date('U')); ?></p>
               <a class="pull-right ver-mais" href="<?php  echo get_permalink(get_the_ID()); ?>">Continue lendo &rarr;</a>
           </div>
         </div>

@@ -194,7 +194,7 @@ Template Name: Página Inicial
 	        'exclude'          => '',
 	        'meta_key'         => '',
 	        'meta_value'       => '',
-	        'post_type'        => 'emprego',
+	        'post_type'        => 'oportunidade',
 	        'post_mime_type'   => '',
 	        'post_parent'      => '',
 	        'post_status'      => 'publish',
