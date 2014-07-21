@@ -15,53 +15,59 @@
       <div class='docente_nome'>
         <h3><?php echo the_title( null, null, false ) ?></h3>
       </div>
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-6 text-center">
+          <div class = 'docente_imagem'>
+          <?php
+            /*Seto a class do thumbnail manualmente pelo $att, porque antes não estava fazendo diferenca.*/
+            $att = array('class' => 'docente_imagem');
 
-      <div class = 'docente_imagem'>
-      <?php
-        /*Seto a class do thumbnail manualmente pelo $att, porque antes não estava fazendo diferenca.*/
-        $att = array('class' => 'docente_imagem');
+            echo get_the_post_thumbnail(get_the_ID(), 'thumbnail',$att);
 
-        echo get_the_post_thumbnail(get_the_ID(), 'thumbnail',$att);
+            $cargo = get_post_meta( get_the_ID(), 'docentes_cargo', true );
+            $email = get_post_meta( get_the_ID(), 'docentes_email', true );
+            $site = get_post_meta( get_the_ID(), 'docentes_website', true );
+            $lattes = get_post_meta( get_the_ID(), 'docentes_lattes', true );
+            $especialidade = get_post_meta( get_the_ID(), 'docentes_especialidade', true );
+            ?>
+            </div>
+            <div class = 'docente_contato'>
 
-        $cargo = get_post_meta( get_the_ID(), 'docentes_cargo', true );
-        $email = get_post_meta( get_the_ID(), 'docentes_email', true );
-        $site = get_post_meta( get_the_ID(), 'docentes_website', true );
-        $lattes = get_post_meta( get_the_ID(), 'docentes_lattes', true );
-        $especialidade = get_post_meta( get_the_ID(), 'docentes_especialidade', true );
-        ?>
-        </div>
-        <div class = 'docente_contato'>
+            <?php
+            if ($cargo) {
+              echo "<p>Cargo: <strong>{$cargo}</strong></p>";
+            }
 
-        <?php
-        if ($cargo) {
-          echo "<p>Cargo: <strong>{$cargo}</strong></p>";
-        }
+            if ($email) {
+              echo "<p>Email: <a href=\"mailto:{$email}\">{$email}</a></p>";
+            }
 
-        if ($email) {
-          echo "<p>Email: <a href=\"mailto:{$email}\">{$email}</a></p>";
-        }
+            if ($site) {
+              echo "<p>Site: <a href=\"$site\">{$site}</a></p>";
+            }
 
-        if ($site) {
-          echo "<p>Site: <a href=\"$site\">{$site}</a></p>";
-        }
+            if ($lattes) {
+              echo "<p><a href=\"$lattes\">Lattes</a></p>";
+            }
 
-        if ($lattes) {
-          echo "<p> <a href=\"$lattes\">Lattes</a></p>";
-        }
-
-        if ($especialidade) {
-          echo "<p>Especialidade: <strong>{$especialidade}</strong></p>";
-        }
-        ?>
+            if ($especialidade) {
+              echo "<p>Especialidade: <strong>{$especialidade}</strong></p>";
+            }
+            ?>
           </div>
+        </div>
 
+        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-6">
           <div class = 'docente_resumo'>
-        <?php
+          <?php
 
-        echo "<p>".the_excerpt() ." </p>";
+            echo "<p>".the_content() ." </p>";
 
-      ?>
-      </div>
+          ?>
+          </div>
+        </div>
+      </div>          
     </div>
   <?php endwhile; ?>
   </div>
