@@ -31,6 +31,12 @@ register_sidebar(array(
   'description'   => 'Menu lateral na página de notícias'
 ));
 
+register_sidebar(array(
+  'name' => 'Menu Clube de Programação',
+  'id'   => 'menu-cps',
+  'description'   => 'Menu lateral na página de clube de programação'
+));
+
 // Define helper constants
 $get_theme_name = explode('/themes/', get_template_directory());
 

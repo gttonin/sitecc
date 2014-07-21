@@ -26,7 +26,6 @@ function formata_data($data) {
 		'Dezembro'
 		);
 
-	$mes = $meses[intval(date('m',strtotime($data)))];
-
-	return date('d',strtotime($data))." de ".$mes." de ".date('Y',strtotime($data));
+	$mes = $meses[intval(date('m',$data))];
+	return date('d', $data)." de ".$mes." de ".date('Y',$data);
 }

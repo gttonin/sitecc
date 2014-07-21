@@ -1,6 +1,15 @@
 <div class="conteudo row">
   <div class="menu-noticias col-xs-12 col-sm-4 col-md-3 col-lg-3">
-    <?php dynamic_sidebar('menu-noticias' ); ?>
+    <li class="widget">
+      <ul>
+      <?php
+      $categorias = get_terms(array("categorias_noticias"));
+      foreach ($categorias as $categoria) {
+        echo "<li><a href='" . get_term_link($categoria) . "'>{$categoria->name}</a></li>";
+      }
+      ?>
+      </ul>
+    </li>
   </div>
 
   <div class=" col-xs-12 col-sm-8 col-md-9 col-lg-9">
@@ -37,7 +46,7 @@
           </header>
           <p>&nbsp;</p>
           <div class="clearfix">
-              <p class="formato-data pull-left"><?php echo formata_data(get_the_date()); ?></p>
+              <p class="formato-data pull-left"><?php echo formata_data(get_the_date('U')); ?></p>
               <a class="pull-right ver-mais" href="<?php  echo get_permalink(get_the_ID()); ?>">Continue lendo &rarr;</a>
           </div>
         </div>

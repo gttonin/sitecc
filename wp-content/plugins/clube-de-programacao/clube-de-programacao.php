@@ -7,11 +7,25 @@
  */
 
 function inicializa_plugin_cps() {
+	register_taxonomy(  
+    'clube_categoria',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces). 
+    'clube-de-programacao',        //post type name
+    array(  
+      'hierarchical' => true,  
+      'label' => 'Categoria Clube de Programação',  //Display name
+      'query_var' => true,
+      'rewrite' => array(
+        'slug' => 'categoria-clube-programacao', // This controls the base slug that will display before each term
+        'with_front' => false // Don't display the category base before 
+      )
+    )  
+  );
+
   $args = array(
 		'public' => true,
 		"menu_position" => 5,
 		"menu_icon" => "dashicons-lightbulb",
-		"taxonomies" => array("category"),
+		"taxonomies" => array("clube_categoria"),
 		"supports" => array( "title", "editor", "thumbnail" ),
 		"has_archive"=> true,
 		'labels'  => array(
