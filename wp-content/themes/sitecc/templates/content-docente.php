@@ -21,7 +21,7 @@
         /*Seto a class do thumbnail manualmente pelo $att, porque antes não estava fazendo diferenca.*/
         $att = array('class' => 'docente_imagem');
 
-        echo get_the_post_thumbnail($page->ID, 'thumbnail',$att);
+        echo get_the_post_thumbnail(get_the_ID(), 'thumbnail',$att);
 
         $cargo = get_post_meta( get_the_ID(), 'docentes_cargo', true );
         $email = get_post_meta( get_the_ID(), 'docentes_email', true );
@@ -46,7 +46,7 @@
         }
 
         if ($lattes) {
-          echo "<p>Lattes: <a href=\"$lattes\">{$lattes}</a></p>";
+          echo "<p> <a href=\"$lattes\">Lattes</a></p>";
         }
 
         if ($especialidade) {
