@@ -83,7 +83,7 @@ Template Name: Página Inicial
 	            }?>
 	            <td>
 
-	            	<p class="formato-data"><?php echo formata_data($post->post_date); ?></p>
+	            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
 	              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
 	            </td>
 	            <?php $count = $count+1;endforeach ?>
@@ -130,7 +130,7 @@ Template Name: Página Inicial
 	            <?php foreach ($posts_array as $post): ?>
 	            <tr>
 		            <td>
-		            	<p class="formato-data"><?php echo formata_data($post->post_date); ?></p>
+		            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
 		              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
 		            </td>
 	            </tr>
@@ -168,7 +168,7 @@ Template Name: Página Inicial
 	            <?php foreach ($posts_array as $post): ?>
 	              <tr>
 		            <td>
-		            	<p class="formato-data"><?php echo formata_data($post->post_date); ?></p>
+		            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
 	              		<a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
 	              </td>
 	              </tr>
@@ -206,7 +206,7 @@ Template Name: Página Inicial
 	            <?php foreach ($posts_array as $post): ?>
 	              <tr>
 		            <td>
-		            	<p class="formato-data"><?php echo formata_data($post->post_date); ?></p>
+		            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
 	              		<a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
 	               </td>
 	              </tr>
