@@ -115,8 +115,6 @@ function docentes_inicializa()
 
       	),
 		"public" => true,
-		"exclude_from_search" => false,
-		"publicly_queryable" => true,
 		"show_ui" => true,
 		"menu_position" => 5,
 		"menu_icon" => "dashicons-admin-users",

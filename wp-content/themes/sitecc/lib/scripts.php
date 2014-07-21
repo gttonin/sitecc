@@ -25,7 +25,7 @@ function roots_scripts() {
   wp_enqueue_style('sitecc_formandos', get_template_directory_uri() . '/assets/css/formandos.css', null, null);
   wp_enqueue_style('content-page', get_template_directory_uri() . '/assets/css/pagestatic.css', null, null);
   wp_enqueue_style('sitecc_docentes', get_template_directory_uri() . '/assets/css/docentes.css', null, null);
-   wp_enqueue_style('sitecc_oportunidades', get_template_directory_uri() . '/assets/css/oportunidades.css', null, null);
+  wp_enqueue_style('sitecc_oportunidades', get_template_directory_uri() . '/assets/css/oportunidades.css', null, null);
   wp_enqueue_style('sitecc_cp', get_template_directory_uri() . '/assets/css/cp.css', null, null);
 
   // Load style.css from child theme
@@ -47,6 +47,7 @@ function roots_scripts() {
   }
   
   wp_enqueue_script( "nivo-js",get_template_directory_uri() . '/assets/js/jquery.nivo.slider.pack.js', false, null, true);
+  wp_enqueue_script( "infinite-scoll-js",get_template_directory_uri() . '/assets/js/jquery.infinitescroll.min.js', false, null, true);
 
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
   wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', false, null, true);

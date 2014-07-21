@@ -29,3 +29,15 @@ function formata_data($data) {
 	$mes = $meses[intval(date('m',$data))];
 	return date('d', $data)." de ".$mes." de ".date('Y',$data);
 }
+
+function custom_paged_404_fix( ) {
+
+    global $wp_query;
+    if ( !is_404()  || 0 != count( $wp_query->posts ) ) {
+        return;
+    }
+
+    header('HTTP/1.0 404 Not Found');
+    exit;
+}
+add_action( 'wp', 'custom_paged_404_fix' );

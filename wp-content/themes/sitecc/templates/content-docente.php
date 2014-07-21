@@ -1,5 +1,5 @@
-<div class = 'docentes'>
-<div class="conteudo container-fluid docentes">
+<div class = ''>
+<div class="conteudo container-fluid ">
 <?php if (!have_posts()) : ?>
   <div class="alert alert-block fade in">
     <a class="close" data-dismiss="alert">&times;</a>
@@ -8,7 +8,7 @@
 <?php endif; ?>
 
 <?php if (have_posts()):?>
-  <div class="docente">
+  <div class="docentes">
   <?php while (have_posts()) : the_post(); ?>
 
     <div class='docente clearfix'>
@@ -65,6 +65,25 @@
     </div>
   <?php endwhile; ?>
   </div>
+  <div class="text-center imagem-carregando" style="display: none;">
+    <img src="<?php echo get_site_url(); ?>/assets/img/loading.gif" alt="Carregando..." />
+  </div>
 <?php endif ?>
 </div>
 </div>
+<?php if ($wp_query->max_num_pages > 1) : ?>
+  <nav id="post-nav" class="hidden">
+    <ul class="pager">
+      <?php if (get_next_posts_link()) : ?>
+        <li class="previous"><?php next_posts_link("Docentes anteriores"); ?></li>
+      <?php else: ?>
+        <li class="previous disabled"><a>Docentes Anteriores</a></li>
+      <?php endif; ?>
+      <?php if (get_previous_posts_link()) : ?>
+        <li class="next"><?php previous_posts_link("Próximos Docentes"); ?></li>
+      <?php else: ?>
+        <li class="next disabled"><a>Próximos Docentes</a></li>
+      <?php endif; ?>
+    </ul>
+  </nav>
+<?php endif; ?>
