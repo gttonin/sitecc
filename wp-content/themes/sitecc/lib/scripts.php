@@ -27,6 +27,7 @@ function roots_scripts() {
   wp_enqueue_style('sitecc_docentes', get_template_directory_uri() . '/assets/css/docentes.css', null, null);
   wp_enqueue_style('sitecc_oportunidades', get_template_directory_uri() . '/assets/css/oportunidades.css', null, null);
   wp_enqueue_style('sitecc_cp', get_template_directory_uri() . '/assets/css/cp.css', null, null);
+  wp_enqueue_style('sitecc_blog', get_template_directory_uri() . '/assets/css/blog.css', null, null);
 
   // Load style.css from child theme
   if (is_child_theme()) {

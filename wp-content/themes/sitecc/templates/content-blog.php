@@ -3,7 +3,7 @@
     <?php while (have_posts()) : the_post(); ?>
     <div class="post-unity">
       <div class="post-title">
-        <h3><?php the_title() ?></h3>      
+        <h3><?php the_title(); ?></h3>      
       </div>
       <div class="post-resume">
         <?php the_excerpt(); ?> 
@@ -18,36 +18,30 @@
         <?php $comments_count = wp_count_comments();
           echo '<span class="post-coments">' . $comments_count->total_comments . " comentarios </span>";
         ?>
-        <a class="post-readmore" href="<?php get_permalink(); ?>" >Leia mais</a> 
+        <a class="post-readmore" href="<?php echo get_permalink($post->ID); ?>" >Leia mais</a> 
       </div>
     </div>  
     <?php endwhile; ?>
+    <div class="pages-navegation">
+      <span class="page-title-footer">Páginas</span>
+      <?php pagination_funtion(); ?>
+    </div>
+
   </div>
   <div class="nav-menu">
     <div class="nav-date">
 
     </div>
     <div class="nav-category">
-    <?php
-      $args = array(
-          'type'                     => 'post',
-          'child_of'                 => 0,
-          'parent'                   => '',
-          'orderby'                  => 'name',
-          'order'                    => 'ASC',
-          'hide_empty'               => 1,
-          'hierarchical'             => 1,
-          'exclude'                  => '',
-          'include'                  => '',
-          'number'                   => '',
-          'taxonomy'                 => 'category',
-          'pad_counts'               => false 
-
-        ); 
-       $categories = get_categories( $args); 
-
-       ?> 
-      <?php dynamic_sidebar('menu-noticias' ); ?>
+      <h3>Categorias</h3>
+      <ul>
+        <?php
+        $categorias = get_terms(array("categorias_blog"));
+        foreach ($categorias as $categoria) {
+          echo "<li><a href='" . get_term_link($categoria) . "'> $categoria->name</a></li>";
+        }
+        ?>
+      </ul>
     </div>
   </div>
 </div>

@@ -1,0 +1,91 @@
+.conteudo.blog .posts {
+	width:80%;
+	float:left;
+}
+.conteudo.blog .posts .post-unity {
+	padding:10px 20px 10px 5px;
+}
+
+.conteudo.blog .posts .post-unity .post-resume {
+	display: block;
+	padding-right: 10px;
+	font-size:14px;
+	line-height: 20px;
+}
+
+.conteudo.blog .posts .post-unity .post-data {
+	width: 100%;
+}
+
+.conteudo.blog .post-data .post-date {
+	width: 25%;
+	float:left;
+}
+
+.conteudo.blog .post-data .post-category {
+	width: 25%;
+	float:left;
+}
+
+.conteudo.blog .post-data .post-coments {
+	width: 25%;
+	float:left;
+}
+
+.conteudo.blog .post-data .post-readmore {
+	margin-top:-5px;
+}
+
+.conteudo.blog .post-data .post-readmore {
+	padding:10px 20px;
+	background-color:#565656;
+	color: #FFF;
+}
+
+.conteudo.blog .post-data .post-readmore:hover {
+	color: #AAA;
+	text-decoration: none;
+}
+
+.conteudo.blog .pages-navegation{
+	margin:10px auto 0px;
+	height:30px;
+}
+
+.conteudo.blog .pages-navegation .page-title-footer{
+	float: left;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.conteudo.blog .pages-navegation .page-numbers li {
+	border: 1px solid #333;
+	padding:0px 5px ;
+}
+
+.conteudo.blog .pages-navegation .page-numbers li span {
+	font-weight: bold;
+}
+
+.conteudo.blog .page-numbers li {
+	list-style:none;
+	float:left;
+	margin-right: 5px;
+}
+
+.conteudo.blog .nav-menu {
+	width:20%;
+	float:left;
+}
+
+/*--------------Post aberto*/
+
+.blog.status-publish .entry-content {
+	float:left;
+	width: 80%;
+}
+
+.blog.status-publish .nav-menu {
+	width:20%;
+	float:left;
+}
