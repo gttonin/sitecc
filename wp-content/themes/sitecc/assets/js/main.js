@@ -77,5 +77,11 @@ $(document).ready(function() {
 			}
 
 		});
-	};
+	}
+
+	if ($(".form-contato").length) {
+		$(".form-contato input, .form-contato textarea").not("[type=submit]").addClass("form-control");
+		$(".form-contato input[type=submit]").addClass("btn btn-default");
+	}
+
 });

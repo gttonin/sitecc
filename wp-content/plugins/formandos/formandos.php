@@ -13,8 +13,6 @@ function change_default_title( $title ){
     }
  
     return $title;
-    
-    
 }
 
 function mostra_html_formandos($post)
@@ -56,12 +54,12 @@ function mostra_html_formandos($post)
 
 function formandos_inicializa_metabox()
 {
-	add_meta_box( "metabox_info_formandos", 
-				  "Informações adicionais",
-				  "mostra_html_formandos",
-				  "formando",
-				  "advanced",
-				  "high");
+	// add_meta_box( "metabox_info_formandos", 
+	// 			  "Informações adicionais",
+	// 			  "mostra_html_formandos",
+	// 			  "formando",
+	// 			  "advanced",
+	// 			  "high");
 }
 
 
@@ -94,6 +92,22 @@ function formandos_salva_dados($post_id)
 
 function formandos_inicializa()
 {
+	register_taxonomy(  
+    	'ano_formacao',
+	    'formando',
+	    array(  
+	      'hierarchical' => true,  
+	      'label' => 'Ano de Formação',
+	      'query_var' => true,
+	      "labels" => array(
+	      	"name" => "Anos de Formação",
+	      	"singular_name" => "Ano de Formação",
+	      	"add_new_item" => "Adicionar ano de formação",
+	      	"parent_item" => ""
+	      )
+	    )
+  );
+
 	register_post_type ( "formando", array(
 		'labels' => array(
 
@@ -121,7 +135,10 @@ function formandos_inicializa()
 		"menu_icon" => "dashicons-admin-users",
 		"supports" => array( "title", "editor", "thumbnail" ),
 		"has_archive"=> true,
-		"register_meta_box_cb" => "formandos_inicializa_metabox"
+		"taxonomies" => array("ano_formacao"),
+		"rewrite" => array(
+			"slug" => "formandos"
+		)
 	));
 
 	add_action( 'save_post', "formandos_salva_dados" );

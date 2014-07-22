@@ -14,11 +14,11 @@ function inicializa_plugin_blogs() {
 	    'post',        //post type name
 	    array(  
 	      'hierarchical' => true,  
-	      'label' => 'Blog',  //Display name
+	      'label' => 'Categorias do Blog',  //Display name
 	      'query_var' => true,
 	      'rewrite' => array(
-	        'slug' => 'Blog', // This controls the base slug that will display before each term
-	        'with_front' => false // Don't display the category base before 
+	        'slug' => 'blog/categoria', // This controls the base slug that will display before each term
+	        'with_front' => true // Don't display the category base before 
 	      )
 	    )  
    );
@@ -28,7 +28,7 @@ function inicializa_plugin_blogs() {
 		"menu_position" => 5,
 		"menu_icon" => "dashicons-welcome-widgets-menus",
 		"taxonomies" => array("categorias_blog"),
-		"supports" => array( "title", "editor", "thumbnail" ),
+		"supports" => array( "title", "editor"),
 		"has_archive"=> true,
 		'labels'  => array(
 

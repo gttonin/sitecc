@@ -31,7 +31,10 @@ function inicializa_plugin_oportunidades() {
 			'not_found'          =>  'Nenhum oportunidade encontrado.',
 			'not_found_in_trash' =>  'Nenhum oportunidade encontrado na lixeira.',
 
-      	)
+      	),
+      "rewrite" => array(
+        "slug" => "oportunidades"
+      )
     );
 
     register_post_type( 'oportunidade', $args ); // aqui sempre singular

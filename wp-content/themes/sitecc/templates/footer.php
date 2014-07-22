@@ -4,10 +4,11 @@
 	<a href="#menu" id="voltar-topo"></a>
 	<div class="row-fluid clearfix">
 		<div class="logos col-xs-12 col-sm-5 col-md-5 col-lg-5">
-		
-			<img src="/assets/img/uffs.png"  class="img-rodape">
+			<a href="http://uffs.edu.br">
+				<img src="/assets/img/uffs.png"  class="img-rodape" />
+			</a>
 			<a href="http://www.sbc.org.br/">
-				<img src="/assets/img/logo_sbc.png" class="img-rodape">
+				<img src="/assets/img/logo_sbc.png" class="img-rodape" />
 			</a>	
 		</div>
 		
