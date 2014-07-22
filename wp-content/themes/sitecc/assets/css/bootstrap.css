@@ -10,9 +10,9 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-.formCont{width:280px;height:30px;border:1px solid #fff;}
-.formContArea{width:280px;height:80px;}
-.btnForm{box-shadow: 1px 1px 2px #999;width:80px;}
+.formCont{width:310px;height:35px;border:1px solid #f2f4f6;margin-bottom: -2px;}
+.formContArea{width:310px;height:80px;border:1px solid #f2f4f6;}
+.btnForm{box-shadow: 1px 1px 2px #999;width:80px;margin-left:230px;margin-bottom: -2px;}
 body {
   margin: 0;
 }
