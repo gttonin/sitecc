@@ -9,14 +9,14 @@
         <?php the_excerpt(); ?> 
       </div>
       <div class="post-data">
-        <span class="post-date">
-        <?php  echo get_the_date(); ?>
+        <span class="post-date data">
+          <?php echo formata_data(get_the_date('U')); ?>
         </span>
         <span class="post-category">
           <?php the_category(); ?>
         </span>
         <?php $comments_count = wp_count_comments();
-          echo '<span class="post-coments">' . $comments_count->total_comments . " comentarios </span>";
+          echo '<span class="post-coments">' . $comments_count->total_comments . " comentários </span>";
         ?>
         <a class="post-readmore" href="<?php echo get_permalink($post->ID); ?>" >Leia mais</a> 
       </div>

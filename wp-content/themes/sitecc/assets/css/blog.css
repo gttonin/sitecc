@@ -38,8 +38,9 @@
 
 .conteudo.blog .post-data .post-readmore {
 	padding:10px 20px;
-	background-color:#565656;
-	color: #FFF;
+	background: #eaeaea;
+	border: 1px solid #E4E4E4;
+	color: #747272;
 }
 
 .conteudo.blog .post-data .post-readmore:hover {
@@ -82,15 +83,17 @@
 	float:left;
 }
 
+
 .nav-menu .nav-date ,.nav-menu .nav-category {
-	background:#333;
-	box-shadow: 1px 1px 1px #000;
+	background: #eaeaea;
+	border: 1px solid #E4E4E4;
+	color: #747272;
 	padding: 2px 5px;
 	margin-bottom: 10px;
 }
 
 .nav-menu  h3{
-	color:#FFF;
+	color:#747272;
 	padding: 5px 10px;
 	border-bottom: 1px solid #999;
 	margin: 5px auto 10px;
@@ -111,4 +114,27 @@
 .blog.status-publish .entry-content {
 	float:left;
 	width: 80%;
+}
+
+.post-title {
+	padding-bottom: 20px;
+}
+
+.post-resume p {
+	font-size: 15px;
+	padding-bottom: 30px;
+	margin: 0 0 10px;
+	color: #555;
+}
+
+.post-coments,.post-category,.post-date {
+	color: #555;
+	font-style: italic;
+}
+
+.post-unity {
+	padding: 30px 50px !important;
+	border: 1px solid #d0d0d0;
+	margin: 25px 0;
+	box-shadow: 3px 3px 7px rgba(0,0,0,0.15);
 }
