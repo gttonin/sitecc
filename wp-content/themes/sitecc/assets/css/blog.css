@@ -73,9 +73,37 @@
 	margin-right: 5px;
 }
 
-.conteudo.blog .nav-menu {
+.conteudo.blog .page-numbers li a {
+	color: #485;
+} 
+
+.nav-menu {
 	width:20%;
 	float:left;
+}
+
+.nav-menu .nav-date ,.nav-menu .nav-category {
+	background:#333;
+	box-shadow: 1px 1px 1px #000;
+	padding: 2px 5px;
+	margin-bottom: 10px;
+}
+
+.nav-menu  h3{
+	color:#FFF;
+	padding: 5px 10px;
+	border-bottom: 1px solid #999;
+	margin: 5px auto 10px;
+}
+
+.nav-menu .nav-category ul {
+	list-style: none;
+	padding-left: 10px;
+} 
+
+.nav-menu .nav-category li a {
+	color:white;
+	
 }
 
 /*--------------Post aberto*/
@@ -83,9 +111,4 @@
 .blog.status-publish .entry-content {
 	float:left;
 	width: 80%;
-}
-
-.blog.status-publish .nav-menu {
-	width:20%;
-	float:left;
 }

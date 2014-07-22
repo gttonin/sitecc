@@ -30,7 +30,9 @@
   </div>
   <div class="nav-menu">
     <div class="nav-date">
-
+      <h3>Posts Recentes</h3>
+      <ul>
+      </ul>
     </div>
     <div class="nav-category">
       <h3>Categorias</h3>
