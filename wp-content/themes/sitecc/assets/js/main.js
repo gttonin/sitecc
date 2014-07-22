@@ -31,51 +31,5 @@ $(document).ready(function() {
 
 
 		return false;
-	});
-
-	if ($('.docentes').length) {
-		
-		var paginaAtual = 1;
-		var carregando = false;
-		var link = document.URL;
-		var terminou = false;
-
-		if (link[link.length - 1] != '/') {
-			link += "/";
-		}
-
-		$(window).on("scroll", function(e) {
-			if (carregando || terminou) {
-				return true;
-			}
-
-			var estaNaTela = ($(window).scrollTop() + ($(window).height()*($(window).height()*2)))  >= $("#post-nav").offset().top;
-
-			if (estaNaTela) {
-				paginaAtual += 1;
-				carregando = true;
-
-				$(".imagem-carregando").fadeIn(400);
-
-				$.get(link + "page/" + paginaAtual).done(function(resposta, status) {
-					setTimeout(function() {
-
-					var docentes = $(resposta).find(".docente");
-					
-					for (var i = 0; i < docentes.length; i++) {
-						$(".docentes").append(docentes[i]);
-					}
-
-					carregando = false;
-					$(".imagem-carregando").fadeOut(400);
-					}, 2000);
-				}).fail(function() {
-					$(".imagem-carregando").fadeOut(400);
-					terminou = true;
-					return;
-				});
-			}
-
-		});
-	};
+	})
 });

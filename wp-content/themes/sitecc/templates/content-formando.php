@@ -1,4 +1,5 @@
-<div class="conteudo container-fluid pgempreendimentos">
+<div class = 'formandos'>
+<div class="conteudo container-fluid formandos">
 <?php if (!have_posts()) : ?>
   <div class="alert alert-block fade in">
     <a class="close" data-dismiss="alert">&times;</a>
@@ -7,49 +8,36 @@
 <?php endif; ?>
 
 <?php if (have_posts()):?>
-  <div class="corretores">
+  <div class="formando">
   <?php while (have_posts()) : the_post(); ?>
-    <p>sdgjs</p>
-    <div class='corretor clearfix'>
-      
-      <h3><?php echo the_title( null, null, false ) ?></h3>
 
+    <div class='formando clearfix'>
+      <div class='formando_nome'>
+        <h3><?php echo the_title( null, null, false ) ?></h3>
+      </div>
+
+      <div class = 'formando_imagem'>
       <?php
-        $telefone = get_post_meta( get_the_ID(), 'telefone', true );
-        $email = get_post_meta( get_the_ID(), 'email', true );
-        $creci = get_post_meta( get_the_ID(), 'creci', true );
+        /*Seto a class do thumbnail manualmente pelo $att, porque antes não estava fazendo diferenca.*/
+        $att = array('class' => 'formando_imagem');
 
-        if ($creci) {
-          echo "<p>CRECI: <strong>{$creci}</strong></p>";
+        echo get_the_post_thumbnail($page->ID, 'thumbnail',$att);
+        ?>
+        </div>
+        <div class='formando_contato'>
+        <?php
+        $ano = get_post_meta( get_the_ID(), 'formandos_ano', true );
+        
+        if ($ano) {
+          echo "<p>Ano: <strong>{$ano}</strong></p>";
         }
 
-        if ($telefone) {
-          echo "<p>Telefone: <strong>{$telefone}</strong></p>";
-        }
-
-        if ($email) {
-          echo "<p>Email: <a href=\"mailto:{$email}\">{$email}</a></p>";
-        }
       ?>
+      </div>
+      </div>
     </div>
   <?php endwhile; ?>
   </div>
 <?php endif ?>
 </div>
-
-<?php if ($wp_query->max_num_pages > 1) : ?>
-  <nav id="post-nav">
-    <ul class="pager">
-      <?php if (get_next_posts_link()) : ?>
-        <li class="previous"><?php next_posts_link("Empreendimentos anteriores"); ?></li>
-      <?php else: ?>
-        <li class="previous disabled"><a>Empreendimentos Anteriores</a></li>
-      <?php endif; ?>
-      <?php if (get_previous_posts_link()) : ?>
-        <li class="next"><?php previous_posts_link("Próximos Empreendimentos"); ?></li>
-      <?php else: ?>
-        <li class="next disabled"><a>Próximos Empreendimentos</a></li>
-      <?php endif; ?>
-    </ul>
-  </nav>
-<?php endif; ?>
+</div>
