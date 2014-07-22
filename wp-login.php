@@ -856,14 +856,19 @@ default:
 ?>
 
 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
-	<p>
-		<label for="user_login"><?php _e('Username') ?><br />
-		<input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
-	</p>
-	<p>
-		<label for="user_pass"><?php _e('Password') ?><br />
-		<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
-	</p>
+	<div class="imgform">
+		<img src="/assets/img/loginLogo.png" alt="Universidade Federal da Fronteira Sul">
+	</div>
+	<div>	
+		<p>
+			<label for="user_login"><?php _e('Username') ?><br />
+			<input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
+		</p>
+		<p>
+			<label for="user_pass"><?php _e('Password') ?><br />
+			<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
+		</p>
+	</div>
 	<?php
 	/**
 	 * Fires following the 'Password' field in the login form.

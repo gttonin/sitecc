@@ -45,3 +45,21 @@ h1, p.message {
 .login #backtoblog a:hover, .login #nav a:hover {
 	color: #fff;
 }
+
+.wp-core-ui .button-primary{
+	background: #34A34A;
+	border-color: #41A200;
+}
+
+.wp-core-ui .button-primary:hover{
+	background: #34A34A;
+}
+
+#loginform .imgform {
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -230px;
+}
