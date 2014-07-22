@@ -856,9 +856,7 @@ default:
 ?>
 
 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
-	<div class="imgform">
-		<img src="/assets/img/loginLogo.png" alt="Universidade Federal da Fronteira Sul">
-	</div>
+	
 	<div>	
 		<p>
 			<label for="user_login"><?php _e('Username') ?><br />
