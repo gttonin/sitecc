@@ -51,10 +51,19 @@ h1, p.message {
 	border-color: #41A200;
 }
 
-.wp-core-ui .button-primary:hover{
+.wp-core-ui .button-primary:hover,.wp-core-ui .button-primary:focus{
 	background: #34A34A;
+	border-color: #41A200;
 }
 
+.wp-core-ui .button-primary:hover{
+	background: #34A34A;
+	border-color: #41A200;
+}
+.wp-core-ui .button-primary:active {
+	background: #34A34A;
+	border-color: #41A200;
+}
 #loginform .imgform {
 	width: 100px;
 	position: absolute;
