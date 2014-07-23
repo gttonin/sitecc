@@ -32,12 +32,5 @@
 				
 			</div>
 		</div>
-
-		<div>
-			<div class="form-contato col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<h3>Entre em contato conosco</h3>
-				<?php echo do_shortcode( '[contact-form-7 id="12" title="Formulário de contato 1"]' ); ?>
-			</div>
-		</div>
 	</div>
 </div>

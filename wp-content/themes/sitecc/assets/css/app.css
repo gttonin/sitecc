@@ -3,6 +3,7 @@
 body{
 
 	font-family: 'Lato', Helvetica, Arial, Verdana, sans-serif !important;
+	text-align: justify;
 }
 
 .form-contato input, .form-contato textarea {
