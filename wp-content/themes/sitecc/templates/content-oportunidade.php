@@ -1,9 +1,6 @@
 <div class="conteudo row">
-  <div class="menu-oportunidades col-xs-12 col-sm-4 col-md-3 col-lg-3">
-    <?php dynamic_sidebar('menu-oportunidades' ); ?>
-  </div>
 
-  <div class=" col-xs-12 col-sm-8 col-md-9 col-lg-9">
+  <div class="">
     
     <?php if (!have_posts()) : ?>
       <div class="alert alert-block fade in">

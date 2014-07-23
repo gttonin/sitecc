@@ -13,9 +13,6 @@ function inicializa_plugin_eventos() {
 		"menu_position" => 5,
 		"has_archive" => true,
 		"supports" => array("title", "editor", "thumbnail"),
-		"rewrite" => array(
-			"slug" => "eventos"
-		),
 		'labels'  => array(
 
       		'name'               =>  'Eventos',

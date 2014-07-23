@@ -44,9 +44,6 @@ function inicializa_plugin_noticias() {
   		'parent_item_colon'  =>  'Notícia pai:',
   		'not_found'          =>  'Nenhuma notícia encontrado.',
   		'not_found_in_trash' =>  'Nenhuma notícia encontrado na lixeira.',
-    ),
-    "rewrite" => array(
-      "slug" => "noticias"
     )
   );
 

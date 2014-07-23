@@ -120,9 +120,6 @@ function docentes_inicializa()
 		"menu_icon" => "dashicons-admin-users",
 		"supports" => array( "title", "editor", "thumbnail" ),
 		"has_archive"=> true,
-		"rewrite" => array(
-			"slug" => "docentes"
-		),
 		"register_meta_box_cb" => "docentes_inicializa_metabox"
 	));
 

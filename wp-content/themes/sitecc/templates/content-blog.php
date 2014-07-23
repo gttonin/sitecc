@@ -30,30 +30,7 @@
     <?php endwhile; ?>
   </div>
 
-  <div class="nav-menu  col-xs-12 col-sm-4 col-md-4 col-lg-3">
-    <div class="nav-date">
-      <h3>Posts Recentes</h3>
-      <ul>
-      </ul> 
-    </div>
-    <div class="nav-category">
-      <h3>Categorias</h3>
-      <ul>
-        <?php
-        $categorias = get_terms(array("categorias_blog"));
-        foreach ($categorias as $categoria) {
-          $link = get_term_link($categoria);
-
-          if (is_wp_error($link)) {
-            continue;
-          }
-
-          echo "<li><a href='" . esc_url($link) . "'> $categoria->name</a></li>";
-        }
-        ?>
-      </ul>
-    </div>
-  </div>
+  <?php include "blog_lateral.php"; ?>
 </div>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>

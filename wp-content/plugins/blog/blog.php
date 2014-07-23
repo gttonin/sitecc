@@ -35,7 +35,7 @@ function inicializa_plugin_blogs() {
       		'name'               =>  'Blog',
 			'singular_name'      =>  'Blog',
 			'menu_name'          =>  'Blog',
-			'name_admin_bar'     =>  'Blog' ,
+			'name_admin_bar'     =>  'Post do Blog' ,
 			'add_new'            =>  'Adicionar novo' ,
 			'add_new_item'       =>  'Adicionar novo Post' ,
 			'new_item'           =>  'Novo Post' ,

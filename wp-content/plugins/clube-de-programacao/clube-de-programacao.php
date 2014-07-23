@@ -33,7 +33,7 @@ function inicializa_plugin_cps() {
       'name'               =>  'Clube Programação',
 			'singular_name'      =>  'Clube Programação',
 			'menu_name'          =>  'Clube Programação',
-			'name_admin_bar'     =>  'Clube Programação' ,
+			'name_admin_bar'     =>  'Post do Clube Programação' ,
 			'add_new'            =>  'Adicionar novo' ,
 			'add_new_item'       =>  'Adicionar novo Post' ,
 			'new_item'           =>  'Novo Post' ,
