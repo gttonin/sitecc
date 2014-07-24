@@ -3,7 +3,7 @@
 <div class="rodape">
 	<a href="#menu" id="voltar-topo"></a>
 	<div class="row-fluid clearfix">
-		<div class="logos col-xs-12 col-sm-5 col-md-5 col-lg-5">
+		<div class="logos col-xs-12 col-sm-8 col-md-9 col-lg-9">
 			<a href="http://uffs.edu.br">
 				<img src="/assets/img/uffs.png"  class="img-rodape" />
 			</a>
@@ -13,7 +13,7 @@
 		</div>
 		
 		<div>
-			<div class="redes-sociais col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="redes-sociais col-xs-12 col-sm-4 col-md-3 col-lg-3">
 				<h3>Envie-nos um email</h3>
 				<a href="mailto:duarte@uffs.edu.br">duarte@uffs.edu.br</a>
 				<h3>Redes sociais</h3>

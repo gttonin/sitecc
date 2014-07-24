@@ -31,6 +31,12 @@
 	height: auto;
 }
 
+.navbar-brand img {
+	-webkit-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+}
+
 .menu-padrao {
 
 	background-image: url(../img/textura_topo.jpg) !important;
@@ -61,11 +67,15 @@
 }
 .navbar {
 	border-radius: 0px !important;
+
 }
 
 .nav > li > a {
 	padding: 55px 30px;
 	font-size: 17px !important;
+	-webkit-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
 }
 
 .navbar-collapse.in  li > a,
@@ -81,6 +91,10 @@
 .navbar-nav li .dropdown-menu {
 
 	background-color: #fff !important;
+}
+
+.collapse.in{
+	max-height: none !important;
 }
 
 .dropdown-menu {
@@ -124,7 +138,7 @@ html body .navbar .dropdown-menu li a {
 
 .nivo-controlNav {
 	position: absolute;
-	right: 150px;
+	right: 15%;
 	bottom: 12px;
 	z-index: 99;
 }
@@ -307,12 +321,28 @@ html body .navbar .dropdown-menu li a {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.nav > li > a {
+		padding: 51px 20px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.nav > li > a {
+		padding: 44px 15px;
+	}
 
+	.navbar .navbar-nav li a {
+		font-size: 14px !important;
+	}
+
+	.navbar-brand {
+		padding: 30px 10px 30px 15px;
+	}
+
+	.navbar-brand img {
+		width: 150px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -320,11 +350,17 @@ html body .navbar .dropdown-menu li a {
 	.painel {
 		margin-top: 40px;
 	}
+
+	.redes-sociais {
+		text-align: center;
+	}
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-
+	.nivo-controlNav {
+		display: none !important;
+	}
 }
 
 /* Custom, iPhone Retina */ 
