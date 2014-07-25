@@ -19,4 +19,4 @@ foreach ($plugins as $plugin){
  */
 
 $tema = "sitecc";
-switch_theme($tema, $tema);
+//switch_theme($tema, $tema);
