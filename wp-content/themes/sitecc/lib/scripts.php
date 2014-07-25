@@ -17,6 +17,7 @@
 function roots_scripts() {
   wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', false, null);
   wp_enqueue_style('nivo', get_template_directory_uri() . '/assets/css/nivo-slider.css', false, null);
+  wp_enqueue_style('owl', get_template_directory_uri() . '/assets/css/owl.carousel.css', false, null);
   wp_enqueue_style('nivo-theme', get_template_directory_uri() . '/assets/css/themes/default.css', false, null);
   wp_enqueue_style('roots_app', get_template_directory_uri() . '/assets/css/app.css', false, null);
   wp_enqueue_style('sitecc_home', get_template_directory_uri() . '/assets/css/home.css', null, null);
@@ -50,6 +51,8 @@ function roots_scripts() {
   wp_enqueue_script( "nivo-js",get_template_directory_uri() . '/assets/js/jquery.nivo.slider.pack.js', false, null, true);
   wp_enqueue_script( "infinite-scoll-js",get_template_directory_uri() . '/assets/js/jquery.infinitescroll.min.js', false, null, true);
 
+  wp_register_script('jquerypp', get_template_directory_uri() . '/assets/js/jquerypp.custom.js', false, null, false);
+  wp_enqueue_script('owl', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', false, null, false);
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
   wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', false, null, true);
   wp_register_script('roots_main', get_template_directory_uri() . '/assets/js/main.js', false, null, true);
