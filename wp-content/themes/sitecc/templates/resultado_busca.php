@@ -17,7 +17,7 @@ $query = new WP_Query(array(
 
 <?php if ($query->posts): ?>
   <?php foreach ($query->posts as $resultado): ?>
-    
+    <?php echo var_dump($resultado); ?>
   <?php endforeach ?>
 <?php else: ?>
   <h5 class="text-center">Nenhum resultado encontrado...</h5>
