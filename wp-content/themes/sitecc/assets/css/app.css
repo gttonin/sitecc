@@ -54,9 +54,9 @@ p {
 .anexos .anexo {
   background: #eaeaea;
   padding: 15px 20px 15px 60px;
-  display: inline-block;
+  display: block;
   margin: 10px;
-  width: 250px;
+  
   position: relative;
 
   border-radius: 3px;
