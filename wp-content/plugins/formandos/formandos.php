@@ -15,43 +15,6 @@ function change_default_title( $title ){
     return $title;
 }
 
-function mostra_html_formandos($post)
-{
-	$ano = get_post_meta( $post->ID, "formandos_ano", true );
-		
-	$anoinicio = 2014;
-	
-	$anoatual = date('Y');
-	
-
-	echo '
-
-<table class="form-table">
-	<tbody>
-		<tr>
-			Ano de formação:
-			<hr /> ';
-			for($i = $anoatual;$i>=$anoinicio;$i=$i-1){
-				if($i==$ano){
-					echo "<input id='ano_".$i."' type='radio' name='formandos_ano' value='".$i."'>".$i."</input><br />";
-				}
-				else{
-					echo '<input id="ano_'.$i.'" type="radio" name="formandos_ano" value="'.$i.'" >'.$i.'</input><br />';
-				}
-			}
-			echo '
-		</tr>
-	</tbody>
-</table>
-<script>
-	document.getElementById("ano_'.$ano.'").checked=true;
-</script>
-';
-
-}
-
-
-
 function formandos_inicializa_metabox()
 {
 	// add_meta_box( "metabox_info_formandos", 
@@ -135,10 +98,7 @@ function formandos_inicializa()
 		"menu_icon" => "dashicons-admin-users",
 		"supports" => array( "title", "editor", "thumbnail" ),
 		"has_archive"=> true,
-		"taxonomies" => array("ano_formacao"),
-		"rewrite" => array(
-			"slug" => "formandos"
-		)
+		"taxonomies" => array("ano_formacao")
 	));
 
 	add_action( 'save_post', "formandos_salva_dados" );

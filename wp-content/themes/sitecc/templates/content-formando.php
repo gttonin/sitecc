@@ -6,8 +6,13 @@ $anos = get_terms(array("ano_formacao"));
 
 foreach ($anos as $ano) {
   $args = array(
+    "post_type" => "formando",
     'tax_query' => array(
-      $ano->slug
+      array(
+        "taxonomy" => "ano_formacao",
+        "field" => "slug",
+        "terms" => array($ano->slug)
+      )
     )
   );
 
@@ -16,8 +21,8 @@ foreach ($anos as $ano) {
   echo "<h3>{$ano->name}</h3>";
   echo "<div class='slider-formandos'>";
   foreach ($formandos->posts as $formando) {
-    echo " <div>";
-       the_post_thumbnail("medium",array('class'=>'imagem-capa'));
+    echo "<div>";
+    echo get_the_post_thumbnail($formando->ID, "medium",array('class'=>'imagem-capa'));
     echo "</div>";
   }
   echo "</div>";
