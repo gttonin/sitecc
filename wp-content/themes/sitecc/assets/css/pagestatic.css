@@ -7,7 +7,7 @@
 	line-height:40px;
 	padding-left: 10px;
 	margin: 10px 0px 30px;
-	border:none
+	border:none;
 }
 
 .page-static .conteudo {
@@ -26,7 +26,7 @@
 
 .sub-menu-page .tittle {
 	padding:15px 10px;
-	border-bottom:1px solid #0E3D0E;
+	border-bottom:1px solid #D8D8D8;
 	margin:0px;
 	font-size: 20px;
 	color: #444;
@@ -37,8 +37,16 @@
 	background: #eaeaea;
 }
 
-.sub-menu-page ul li:hover {
+.sub-menu-page ul li:hover, .sub-menu-page ul li.active {
 	background: #fff;
+}
+
+.sub-menu-page ul li.active {
+	padding-right: 30px;
+}
+
+.sub-menu-page ul li.active a {
+	font-weight: 600;
 }
 
 .sub-menu-page ul{
@@ -54,10 +62,6 @@
 	border-top: 1px solid #fff;
 }
 
-.sub-menu-page li:first-of-type {
-	border-top: none;
-}
-
 .sub-menu-page li:last-of-type {
 	border-bottom: none;
 }
@@ -69,10 +73,6 @@
 	width:100%;
 	height:100%; 
 	padding-right: 10px; 
-}
-
-.sub-menu-page li:hover {
-	background:#EEE;
 }
 
 .sub-menu-page li:hover a {

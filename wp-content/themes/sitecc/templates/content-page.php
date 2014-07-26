@@ -91,8 +91,9 @@
       $pages = get_pages($args);
       
       foreach ($pages as $page) {
-     
-        echo '<li><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>';
+        $active = $wp_query->queried_object->ID == $page->ID;
+
+        echo '<li class="' . ($active ? "active" : "") . '"><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>';
      
       }
      
