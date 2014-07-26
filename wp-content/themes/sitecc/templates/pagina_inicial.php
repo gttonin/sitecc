@@ -6,12 +6,11 @@ Template Name: Página Inicial
 ?>
 
 <div class="busca">
-	<div class="row">
+	<form action="<?php echo get_site_url(); ?>/busca" method="get" class="row">
 		<div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 col-lg-3 col-lg-offset-9">
-			<input type="text" class="form-control" placeholder="Digite sua busca aqui">
+			<input type="text" class="form-control" name="termo" placeholder="Digite sua busca aqui">
 		</div>
-	</div>
-	
+	</form>
 </div>
 <p>&nbsp;</p>
 <div class="row">
