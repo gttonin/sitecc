@@ -115,26 +115,11 @@ aqui pra baixo é o que fizemos:
     padding: 5px;
 }
 
-.formandos .formando_nome {
-	
-	
-}
-
-.formandos .formando.clearfix .formando_imagem{
-	width: 150px;
-	height: 150px;
-    float: left;
-    -webkit-border-radius: 75px;
-    background-color: black;
-}
-
-.formandos .formando.clearfix .formando_contato{
-	margin-left: 15%;
-	float: left;
-	width: 33%;
-}
-
-.formandos .formando.clearfix .formando_resumo{
-	float: left;
-	width: 33%;
+.formando-single .imagem-capa {
+	width: 240px;
+	height: 240px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
