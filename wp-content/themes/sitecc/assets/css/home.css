@@ -16,14 +16,7 @@
 	height: 3px;
 	margin-bottom: 8px;
 	background: #fff;
-}
-
-.navbar .navbar-toggle:hover {
-	background: #fff;
-}
-
-.navbar .navbar-toggle:hover span {
-	background: #444;
+	opacity: 1;
 }
 
 .navbar-brand {
