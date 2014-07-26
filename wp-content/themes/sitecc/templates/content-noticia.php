@@ -9,7 +9,7 @@
         if (is_tax()) {
           $active = $wp_query->queried_object->name == $categoria->name;
         }
-        echo "<li class='" . ($active ? "active" : "") . '><a href='" . get_term_link($categoria) . "'>{$categoria->name}</a></li>";
+        echo "<li class='" . ($active ? "active" : "") . "'><a href='" . get_term_link($categoria) . "'>{$categoria->name}</a></li>";
       }
       ?>
       </ul>
