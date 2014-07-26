@@ -16,10 +16,9 @@ foreach ($anos as $ano) {
   echo "<h3>{$ano->name}</h3>";
   echo "<div class='slider-formandos'>";
   foreach ($formandos->posts as $formando) {
-    for ($i=0; $i < 4; $i++) { 
-      
-    echo "<div><img src='http://fakeimg.pl/200x200' /></div>";
-    }
+    echo " <div>";
+       the_post_thumbnail("medium",array('class'=>'imagem-capa'));
+    echo "</div>";
   }
   echo "</div>";
 }
