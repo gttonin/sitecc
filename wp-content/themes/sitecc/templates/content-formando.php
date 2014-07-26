@@ -24,7 +24,7 @@ foreach ($anos as $ano) {
     $url = wp_get_attachment_url( get_post_thumbnail_id($formando->ID) );
 
     echo "<div class='formando' style='background-image: url(" . $url . ");'>";
-    echo "<a class='nome-formando' href='" . get_permalink($formando->post_title) . "'>{$formando->post_title}</a>";
+    echo "<a class='nome-formando' href='" . get_permalink($formando->ID) . "'>{$formando->post_title}</a>";
     echo "</div>";
   }
   echo "</div>";
