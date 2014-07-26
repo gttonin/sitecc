@@ -52,7 +52,7 @@ Template Name: Página Inicial
 		<div class="clearfix painel-titulo">
 			<h3 class="pull-left">Notícias</h3>
 			<a href="<?php echo get_site_url(); ?>/noticia" class="ver-mais pull-right">
-				ver mais <span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="ver-mais-texto">ver mais</span> <span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
 		<?php 
@@ -74,24 +74,24 @@ Template Name: Página Inicial
 	      ?>
 	     <?php $posts_array = get_posts( $args ); ?>
 	      <?php if ($posts_array): $count = 0; ?>
-	          <table>
-	          	<tr>
+	          <div>
+	          	<div class="row">
 	            <?php foreach ($posts_array as $post): 
 	            	
 	            	if ($count === 2) {
-	            	echo "</tr><tr>"; $count=0;
+	            	echo "</div><div class=\"row\">"; $count=0;
 	            }?>
-	            <td>
+	            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ultimos-links">
 
 	            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
 	              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
-	            </td>
+	            </div>
 	            <?php $count = $count+1;endforeach ?>
 	            <?php 	            	
 	            	if ($count === 2) {
-	            	echo "</tr>"; $count=0;
+	            	echo "</div>"; $count=0;
 	            }?>
-	          </table>
+	          </div>
 	      <?php endif ?>
 	</div>
 </div>
@@ -104,7 +104,7 @@ Template Name: Página Inicial
 		<div class="clearfix painel-titulo">
 			<h3 class="pull-left">Blog</h3>
 			<a href="<?php echo get_site_url() ?>/blog" class="ver-mais pull-right">
-				ver mais <span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="ver-mais-texto">ver mais</span> <span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
 		<?php 
@@ -126,23 +126,23 @@ Template Name: Página Inicial
 	      ?>
 	     <?php $posts_array = get_posts( $args ); ?>
 	      <?php if ($posts_array): ?>
-	          <table>
+	          <div>
 	            <?php foreach ($posts_array as $post): ?>
-	            <tr>
-		            <td>
+	            <div>
+		            <div class="ultimos-links">
 		            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
-		              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
-		            </td>
-	            </tr>
+		            	<a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
+		            </div>
+	            </div>
 	            <?php endforeach ?>
-	          </table>
+	          </div>
 	      <?php endif ?>
 	</div>
 	<div class="painel col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 		<div class="clearfix painel-titulo">
 			<h3 class="pull-left">Eventos</h3>
 			<a href="<?php echo get_site_url() ?>/evento" class="ver-mais pull-right">
-				ver mais <span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="ver-mais-texto">ver mais</span> <span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
 		<?php 
@@ -164,23 +164,23 @@ Template Name: Página Inicial
 	      ?>
 	     <?php $posts_array = get_posts( $args ); ?>
 	      <?php if ($posts_array): ?>
-	          <table >
+	          <div >
 	            <?php foreach ($posts_array as $post): ?>
-	              <tr>
-		            <td>
+	              <div>
+		            <div class="ultimos-links">
 		            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
 	              		<a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
-	              </td>
-	              </tr>
+	              </div>
+	              </div>
 	            <?php endforeach ?>
-	          </table>
+	          </div>
 	      <?php endif ?>
 	</div>
 	<div class="painel col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 		<div class="clearfix painel-titulo">
 			<h3 class="pull-left">Oportunidades</h3>
 			<a href="<?php echo get_site_url() ?>/oportunidade" class="ver-mais pull-right">
-				ver mais <span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="ver-mais-texto">ver mais</span> <span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
 		<?php 
@@ -202,16 +202,16 @@ Template Name: Página Inicial
 	      ?>
 	     <?php $posts_array = get_posts( $args ); ?>
 	      <?php if ($posts_array): ?>
-	          <table>
+	          <div>
 	            <?php foreach ($posts_array as $post): ?>
-	              <tr>
-		            <td>
+	              <div>
+		            <div class="ultimos-links">
 		            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
 	              		<a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
-	               </td>
-	              </tr>
+	               </div>
+	              </div>
 	            <?php endforeach ?>
-	          </table>
+	          </div>
 	      <?php endif ?>
 	</div>
 </div>

@@ -229,7 +229,7 @@ html body .navbar .dropdown-menu li a {
 	margin-bottom: 
 }
 
-.painel  table tr td > a {
+.painel  .ultimos-links > a {
 	margin: 0;
 	color: #666 !important;
 	text-decoration: none !important;
@@ -239,18 +239,18 @@ html body .navbar .dropdown-menu li a {
 	transition: all 0.2s ease-in-out;
 }
 
-.painel table tr td > a:hover {
+.painel .ultimos-links > a:hover {
 	color: #444 !important;
 	text-decoration: none !important;
 }
 
-.painel table {
-	list-style: none;
+.painel .ultimos-links a {
+	list-style: none !important;
 }
 
-.painel td {
+.painel .ultimos-links{
 
-	padding: 7px 20px;
+	padding: 7px 20px !important;
 }
 
 .rodape {
@@ -342,6 +342,9 @@ html body .navbar .dropdown-menu li a {
 
 	.navbar-brand img {
 		width: 150px;
+	}
+	.ver-mais-texto {
+		display: none;
 	}
 }
 
