@@ -84,14 +84,14 @@ $(document).ready(function() {
 		$(".form-contato input[type=submit]").addClass("btn btn-default");
 	}
 
-	// $(".slider-formandos").owlCarousel({
+	$(".slider-formandos").owlCarousel({
  
-	// 	autoPlay: 3000, //Set AutoPlay to 3 seconds
+		autoPlay: 3000, //Set AutoPlay to 3 seconds
 
-	// 	items : 3,
-	// 	itemsDesktop : [1199,3],
-	// 	itemsDesktopSmall : [979,3]
+		items : 3,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3]
  
- //  	});
+  	});
 
 });
