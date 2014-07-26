@@ -40,3 +40,46 @@ p {
 #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar>a img {
   margin: 6px 5px 0 6px;
 }
+
+.anexos {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.anexos ul {
+  padding: 0;
+}
+
+.anexos .anexo {
+  background: #eaeaea;
+  padding: 15px 20px 15px 60px;
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  position: relative;
+
+  border-radius: 3px;
+  border: 1px solid #d0d0d0;
+}
+
+.anexos .anexo img {
+  position: absolute;
+  left: 10px;
+  top: 20%;
+}
+
+.anexos .anexo p {
+  color: #444;
+  font-weight: 600;
+}
+
+.anexos .anexo a {
+  color: #444;
+  font-weight: 300;
+}
+
+.anexos .anexo a:hover {
+  text-decoration: none;
+  border-bottom: 1px dashed #444;
+}

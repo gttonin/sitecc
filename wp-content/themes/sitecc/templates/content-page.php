@@ -16,25 +16,22 @@
     </div>
 
     <div class="anexos">
+    <?php $attachments = new Attachments( 'anexos' ); /* pass the instance name */ ?>
+    <?php if( $attachments->exist() ) : ?>
       <h3>Anexos</h3>
-        <ul>
-          <?php
-          $attachments = get_posts(array( 
-              'post_type' => 'attachment',
-              'numberposts' => -1,
-              'post_status' =>'any',
-              'post_parent' => $post->ID
-          ));
-
-          if ($attachments) {
-              foreach ( $attachments as $attachment ) {
-                echo '<li>';
-                  the_attachment_link( $attachment->ID , false );
-                echo '</li>';
-              }
-          }
-          ?>
-        </ul>
+      <ul class="clearfix">
+        <?php while( $attachments->get() ) : ?>
+          <li class="anexo clearfix">
+            <img src="<?php echo get_site_url() ?>/assets/img/file.png" alt="Anexo" />
+            
+            <div class="anexo-descricao">
+              <p><?php echo $attachments->field( 'titulo' ); ?></p>
+              <p><a href="<?php echo $attachments->url(); ?>" class="download" target="_blank">Baixar anexo</a></p>
+            </div>
+          </li>
+        <?php endwhile; ?>
+      </ul>
+    <?php endif; ?>
     </div>
   </div>
   <div class="hidden-xs hidden-sm col-md-3 col-lg-3">

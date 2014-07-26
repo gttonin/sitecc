@@ -41,3 +41,35 @@ function custom_paged_404_fix( ) {
     exit;
 }
 add_action( 'wp', 'custom_paged_404_fix' );
+
+function adiciona_anexos($attachments) {
+  $fields = array(
+    array(
+      'name'      => 'titulo',                         // unique field name
+      'type'      => 'text',                          // registered field type
+      'label'     => "Título",    // label to display
+      'default'   => 'titulo',                         // default value upon selection
+    ),
+  );
+
+  $args = array(
+    'label'         => 'Anexos',
+    'post_type'     => array( 'noticia', 'page' ),
+    'position'      => 'normal',
+    'priority'      => 'high',
+    'filetype'      => null,  // no filetype limit
+    'note'          => 'Anexar arquivos aqui',
+    'append'        => true,
+    'button_text'   => "Buscar arquivos",
+    'modal_text'    => "Anexar arquivos selecionados",
+    'router'        => 'browse',
+    'post_parent'   => false,
+    'fields'        => $fields,
+
+  );
+
+  $attachments->register( 'anexos', $args ); // unique instance name
+}
+
+add_filter( 'attachments_default_instance', '__return_false' ); // disable the default instance
+add_action( 'attachments_register', 'adiciona_anexos' );
