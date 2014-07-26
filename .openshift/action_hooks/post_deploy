@@ -2,6 +2,10 @@
 
 cp "${OPENSHIFT_REPO_DIR}wp-config-sample.php" "${OPENSHIFT_REPO_DIR}wp-config.php"
 
-ln -s "${OPENSHIFT_DATA_DIR}uploads/" "${OPENSHIFT_REPO_DIR}wp-content/uploads"
+if [ -d "${OPENSHIFT_REPO_DIR}assets" ]; then
+  rm -rf "${OPENSHIFT_REPO_DIR}assets"
+fi
+
+ln -s "${OPENSHIFT_DATA_DIR}uploads/" "${OPENSHIFT_REPO_DIR}assets"
 
 php "${OPENSHIFT_REPO_DIR}ativaplugin.php"

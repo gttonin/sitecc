@@ -36,3 +36,7 @@ p {
 .entry-title {
   margin-bottom: 30px;
 }
+
+#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar>a img {
+  margin: 6px 5px 0 6px;
+}
