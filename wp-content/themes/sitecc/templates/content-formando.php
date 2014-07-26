@@ -22,7 +22,7 @@ foreach ($anos as $ano) {
   echo "<div class='slider-formandos'>";
   foreach ($formandos->posts as $formando) {
     echo "<div>";
-    echo get_the_post_thumbnail($formando->ID, "medium",array('class'=>'imagem-capa'));
+    echo get_the_post_thumbnail($formando->ID, "medium",array('class'=>'imagem-capa','data-toggle'=>'tooltip','data-placement'=>'bottom','title'=>$formando->post_title));
     echo "</div>";
   }
   echo "</div>";
