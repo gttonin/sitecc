@@ -21,9 +21,10 @@ foreach ($anos as $ano) {
   echo "<h3>{$ano->name}</h3>";
   echo "<div class='slider-formandos'>";
   foreach ($formandos->posts as $formando) {
-    echo "<div class='formando'>";
+    $url = wp_get_attachment_url( get_post_thumbnail_id($formando->ID) );
+
+    echo "<div class='formando' style='background-image: url(" . $url . ");'>";
     echo "<span class='nome-formando'>{$formando->post_title}</span>";
-    echo get_the_post_thumbnail($formando->ID, "medium",array('class'=>'imagem-capa'));
     echo "</div>";
   }
   echo "</div>";

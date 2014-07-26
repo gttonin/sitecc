@@ -27,10 +27,10 @@ p {
   margin-top: 50px;
 }
 
-.entry-content {
+.entry-content p {
   font-size: 18px;
   line-height: 36px;
-  color: #444;
+  color: #444 !important;
 }
 
 .entry-title {

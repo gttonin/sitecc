@@ -1,7 +1,11 @@
 .formandos .formando {
 	position: relative;
 	width: 240px;
+	height: 240px;
 	overflow: hidden;
+	background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .formandos .formando:hover .nome-formando {
