@@ -78,11 +78,6 @@
 	transition: 0.2s all ease-in-out;
 }
 
-.navbar-collapse.in  li > a,
-.navbar-collapse.collapsing  li > a {
-	padding: 15px 20px;
-}
-
 .nav > li > a:hover,
 .nav > li > a:focus {
 	background: #fff;
@@ -366,6 +361,11 @@ html body .navbar .dropdown-menu li a {
 @media only screen and (max-width : 480px) {
 	.nivo-controlNav {
 		display: none !important;
+	}
+
+	.navbar-collapse.in  li > a,
+	.navbar-collapse.collapsing  li > a {
+		padding: 15px 20px;
 	}
 }
 
