@@ -62,7 +62,9 @@ endif;
         <?php foreach ($posts_array as $post): ?>
           <?php if (!has_post_thumbnail($post->ID )) { continue; } ?>
           <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ) , 'full');?>
-          <img src="<?php echo $src[0]; ?>" alt="<?php echo $post->post_title; ?>" title="<?php echo $post->post_title; ?>" data-transition="slideInLeft">
+          <a href="<?php echo get_permalink($post->ID) ?>">
+            <img src="<?php echo $src[0]; ?>" alt="<?php echo $post->post_title; ?>" title="<?php echo $post->post_title; ?>" data-transition="slideInLeft">
+          </a>
         <?php endforeach ?>
       </div>
     </div>
