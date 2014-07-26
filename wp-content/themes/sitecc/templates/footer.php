@@ -1,7 +1,8 @@
-<?php wp_footer(); ?>
 
 <div class="rodape">
-	<a href="#menu" id="voltar-topo"></a>
+	<a href="#menu" id="voltar-topo">
+		<span class="glyphicon glyphicon-chevron-up"></span>
+	</a>
 	<div class="row-fluid clearfix">
 		<div class="logos col-xs-12 col-sm-8 col-md-9 col-lg-9">
 			<a href="http://uffs.edu.br">
@@ -34,3 +35,5 @@
 		</div>
 	</div>
 </div>
+
+<?php wp_footer(); ?>

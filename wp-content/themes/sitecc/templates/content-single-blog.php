@@ -7,9 +7,9 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-    <footer>
-      <?php the_tags('<ul class="entry-tags"><li>','</li><li>','</li></ul>'); ?>
-    </footer>
+    <div class="comentarios">
+      <?php echo disqus_embed("sitedecinciadacomputaouffs"); ?>
+    </div>
   </article>
 <?php endwhile; ?>
   <?php include "blog_lateral.php" ?>

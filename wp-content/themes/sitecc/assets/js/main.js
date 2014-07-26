@@ -94,6 +94,17 @@ $(document).ready(function() {
  
   });
 
-  $(".slider-formandos img").tooltip();
+  // var dsqKey = "zVb30Yqv18vZ5lrZscvn0Ft3aiyfO3bDOrDZ5jkgxcYhIRScw3lCbAEL6qG9DGNV";
+  // var dsqShortName = "sitedecinciadacomputaouffs";
+
+  // $(".contador-comentarios").each(function() {
+  // 	$.get("https://disqus.com/api/3.0/threads/set.json", {
+  // 		api_key: dsqKey,
+  // 		forum: dsqShortName
+  // 		thread: [$(this).data("url")],
+  // 	}, function(data) {
+  // 		console.log(data);
+  // 	})
+  // });
 
 });

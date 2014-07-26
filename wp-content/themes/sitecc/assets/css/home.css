@@ -233,6 +233,7 @@ html body .navbar .dropdown-menu li a {
 	margin: 0;
 	color: #666 !important;
 	text-decoration: none !important;
+	font-size: 16px;
 
 	-webkit-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -300,21 +301,23 @@ html body .navbar .dropdown-menu li a {
 }
 
 #voltar-topo {
-	background: #fff url(../img/seta_cima.png) no-repeat center center;
-	padding: 40px;
+	background: #fff;
+	padding: 18px 18px 18px 22px;
 	position: absolute;
 	top: -40px;
 	left: 45%;
 	display: block;
 	border-radius: 100px;
-	height: 45px;
-	width: 45px;
 	box-shadow: 0 2px 6px RGBA(0,0,0, .7);
+	color: #bbb;
+	font-size: 40px;
+	line-height: 40px;
 }
 
 .formato-data {
-
-	font-size: 10px;
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 12px;
 	color: #aaa;
 	font-style: italic;
 }

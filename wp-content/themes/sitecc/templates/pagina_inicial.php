@@ -73,24 +73,23 @@ Template Name: Página Inicial
 	      ?>
 	     <?php $posts_array = get_posts( $args ); ?>
 	      <?php if ($posts_array): $count = 0; ?>
-	          <div>
-	          	<div class="row">
-	            <?php foreach ($posts_array as $post): 
-	            	
-	            	if ($count === 2) {
-	            	echo "</div><div class=\"row\">"; $count=0;
-	            }?>
-	            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ultimos-links">
+        	<div class="row">
+          <?php foreach ($posts_array as $post): 
+          	
+          	if ($count === 2) {
+          	echo "</div><div class=\"row\">"; $count=0;
+          }?>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ultimos-links">
 
-	            	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
-	              <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
-	            </div>
-	            <?php $count = $count+1;endforeach ?>
-	            <?php 	            	
-	            	if ($count === 2) {
-	            	echo "</div>"; $count=0;
-	            }?>
-	          </div>
+          	<p class="formato-data"><?php echo formata_data(strtotime($post->post_date)); ?></p>
+            <a href="<?php echo post_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo $post->post_title;?></a>
+          </div>
+          <?php $count = $count+1;endforeach ?>
+          <?php 	            	
+          	if ($count === 2) {
+          	echo "</div>"; $count=0;
+          }?>
+        </div>
 	      <?php endif ?>
 	</div>
 </div>

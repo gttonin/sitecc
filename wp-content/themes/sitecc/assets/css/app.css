@@ -22,3 +22,17 @@ p {
   width: auto;
   margin-top: 10px;
 }
+
+.comentarios {
+  margin-top: 50px;
+}
+
+.entry-content {
+  font-size: 18px;
+  line-height: 36px;
+  color: #444;
+}
+
+.entry-title {
+  margin-bottom: 30px;
+}

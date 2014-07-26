@@ -20,7 +20,7 @@
           <?php the_category(); ?>
         </span>
         <span class="post-comments col-xs-12 col-sm-12 col-md-3 col-lg-3">
-          <?php echo wp_count_comments()->total_comments; ?> comentários
+          <span class="contador-comentarios" data-url="<?php echo get_permalink($post->ID); ?>"></span> comentários</a>
         </span>
         <div class="text-right col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <a class="post-readmore" href="<?php echo get_permalink($post->ID); ?>" >Leia mais</a> 
