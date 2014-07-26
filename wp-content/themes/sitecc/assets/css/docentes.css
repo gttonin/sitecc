@@ -36,9 +36,12 @@
 	border-radius: 10px;
 }
 
-.docentes .docente-listagem img {
-	max-width: 90% !important;
-	height: auto !important;
+.docentes .docente-imagem {
+	width: 200px !important;
+	height: 200px !important;
+	background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .docentes .docente-listagem {

@@ -20,10 +20,12 @@
         <div class="col-xs-12 col-sm-6 col-md-5 col-lg-6 text-center">
           <div class = 'docente_imagem'>
           <?php
-            /*Seto a class do thumbnail manualmente pelo $att, porque antes não estava fazendo diferenca.*/
-            $att = array('class' => 'docente_imagem');
+            $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
+            if (!$url) {
+              $url = "http://fakeimg.pl/200x200/eaeaea/eaeaea/";
+            }
 
-            echo get_the_post_thumbnail(get_the_ID(), 'thumbnail',$att);
+            echo "<div class=\"docente-imagem\" style=\"background-image: url({$url});\"></div>";
 
             $cargo = get_post_meta( get_the_ID(), 'docentes_cargo', true );
             $email = get_post_meta( get_the_ID(), 'docentes_email', true );
