@@ -109,7 +109,10 @@ html body .navbar .dropdown-menu li a {
 .dropdown-menu li a:hover{
 
 	background: #eaeaea !important;
+}
 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	line-height: 35px;
 }
 
 .desloca {
@@ -355,17 +358,17 @@ html body .navbar .dropdown-menu li a {
 	.redes-sociais {
 		text-align: center;
 	}
+
+	.navbar-collapse.in  li > a,
+	.navbar-collapse.collapsing  li > a {
+		padding: 15px 20px;
+	}
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 	.nivo-controlNav {
 		display: none !important;
-	}
-
-	.navbar-collapse.in  li > a,
-	.navbar-collapse.collapsing  li > a {
-		padding: 15px 20px;
 	}
 }
 
