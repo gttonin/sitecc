@@ -94,17 +94,35 @@ $(document).ready(function() {
  
   });
 
-  // var dsqKey = "zVb30Yqv18vZ5lrZscvn0Ft3aiyfO3bDOrDZ5jkgxcYhIRScw3lCbAEL6qG9DGNV";
-  // var dsqShortName = "sitedecinciadacomputaouffs";
+  var dsqKey = "zVb30Yqv18vZ5lrZscvn0Ft3aiyfO3bDOrDZ5jkgxcYhIRScw3lCbAEL6qG9DGNV";
+  var dsqShortName = "sitedecinciadacomputaouffs";
+  var urls = [];
 
-  // $(".contador-comentarios").each(function() {
-  // 	$.get("https://disqus.com/api/3.0/threads/set.json", {
-  // 		api_key: dsqKey,
-  // 		forum: dsqShortName
-  // 		thread: [$(this).data("url")],
-  // 	}, function(data) {
-  // 		console.log(data);
-  // 	})
-  // });
+  $(".contador-comentarios").each(function() {
+  	urls.push("link:" + $(this).data("url"));	
+  });
+
+  $.ajax({
+  	type: "GET",
+  	url: "https://disqus.com/api/3.0/threads/set.json",
+		data: {
+			api_key: dsqKey,
+			forum: dsqShortName,
+			thread: urls
+		},
+		cache: false,
+		dataType: "json",
+		success: function(data) {
+			if (!data.response) {
+				return false;
+			}
+
+			for (var i = 0; i < data.response.length; i++) {
+				var response = data.response[i];
+
+				$(".contador-comentarios[data-url='" + response.link + "']").html(response.posts);
+			}
+		}
+	});
 
 });

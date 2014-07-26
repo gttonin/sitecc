@@ -20,7 +20,7 @@
           <?php the_category(); ?>
         </span>
         <span class="post-comments col-xs-12 col-sm-12 col-md-3 col-lg-3">
-          <span class="contador-comentarios" data-url="<?php echo get_permalink($post->ID); ?>"></span> comentários</a>
+          <span class="contador-comentarios" data-url="<?php echo get_permalink($post->ID); ?>">0</span> comentários</a>
         </span>
         <div class="text-right col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <a class="post-readmore" href="<?php echo get_permalink($post->ID); ?>" >Leia mais</a> 
