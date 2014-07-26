@@ -5,11 +5,8 @@
       <?php
       $categorias = get_terms(array("categorias_noticias"));
       foreach ($categorias as $categoria) {
-        $active = false;
-        if (is_tax()) {
-          $active = $wp_query->queried_object->name == $categoria->name;
-        }
-        echo "<li class='" . ($active ? "active" : "") . '><a href='" . get_term_link($categoria) . "'>{$categoria->name}</a></li>";
+        $active = $wp_query->queried_object->name == $categoria->name;
+        echo "<li class='" . ($active ? "active" : "") . "'><a href='" . get_term_link($categoria) . "'>{$categoria->name}</a></li>";
       }
       ?>
       </ul>

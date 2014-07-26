@@ -94,11 +94,20 @@
 	color:#666;
 	display: block;
 	padding: 10px 20px;
+
+	-webkit-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
-.nav-menu li a:hover {
+.nav-menu li a:hover, .nav-menu li.active a {
 	background: rgba(0,0,0, 0.1);
 	text-decoration: none;
+}
+
+.nav-menu li.active a {
+	padding-left: 35px;
+	font-weight: 600;
 }
 
 /*--------------Post aberto*/

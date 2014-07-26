@@ -94,9 +94,13 @@
 	transition: all 0.2s ease-in-out;
 }
 
-.menu-noticias ul li a:hover{
+.menu-noticias ul li a:hover, .menu-noticias ul li.active a {
 	padding-left: 35px;
 	background: #eaeaea;
+}
+
+.menu-noticias ul li.active a {
+	font-weight: 600;
 }
 
 .menu-noticias ul li:last-of-type {
